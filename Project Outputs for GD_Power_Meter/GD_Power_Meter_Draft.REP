@@ -1,0 +1,244 @@
+*************************************************************
+FileName = GD_Power_Meter_Draft.GBR
+AutoAperture = True
+*************************************************************
+Generating : Top Layer
+      File : GD_Power_Meter_Draft.GTL
+
+    Adding Layer      : Top Layer
+
+    Adding Layer      : Mechanical 1
+
+    Adding Layer      : Multi-Layer
+
+
+Used DCodes :
+    D10
+    D11
+    D12
+    D13
+    D14
+    D15
+    D16
+    D17
+    D18
+    D19
+    D20
+    D21
+    D22
+    D23
+    D24
+    D25
+    D26
+    D27
+    D28
+    D29
+    D30
+    D31
+    D32
+    D33
+    D34
+    D35
+    D36
+    D37
+    D38
+    D39
+    D40
+    D41
+    D42
+    D43
+    D44
+*************************************************************
+
+*************************************************************
+Generating : Bottom Layer
+      File : GD_Power_Meter_Draft.GBL
+
+    Adding Layer      : Bottom Layer
+
+    Adding Layer      : Mechanical 1
+
+    Adding Layer      : Multi-Layer
+
+
+Used DCodes :
+    D10
+    D23
+    D24
+    D25
+    D26
+    D27
+    D29
+    D30
+    D31
+    D32
+    D33
+    D34
+    D35
+    D36
+    D37
+    D38
+    D39
+    D40
+    D41
+    D42
+    D43
+    D44
+*************************************************************
+
+*************************************************************
+Generating : Top Overlay
+      File : GD_Power_Meter_Draft.GTO
+
+    Adding Layer      : Top Overlay
+
+    Adding Layer      : Mechanical 1
+
+
+Used DCodes :
+    D26
+    D30
+    D45
+    D46
+    D47
+    D48
+    D49
+    D50
+*************************************************************
+
+*************************************************************
+Generating : Top Solder
+      File : GD_Power_Meter_Draft.GTS
+
+    Adding Layer      : Top Solder
+
+    Adding Layer      : Mechanical 1
+
+    Adding Layer      : Top Layer
+
+    Adding Layer      : Multi-Layer
+
+
+Used DCodes :
+    D30
+    D51
+    D52
+    D53
+    D54
+    D55
+    D56
+    D57
+    D58
+    D59
+    D60
+    D61
+    D62
+    D63
+    D64
+    D65
+    D66
+    D67
+    D68
+    D69
+    D70
+    D71
+    D72
+    D73
+    D74
+    D75
+    D76
+*************************************************************
+
+*************************************************************
+Generating : Bottom Solder
+      File : GD_Power_Meter_Draft.GBS
+
+    Adding Layer      : Bottom Solder
+
+    Adding Layer      : Mechanical 1
+
+    Adding Layer      : Bottom Layer
+
+    Adding Layer      : Multi-Layer
+
+
+Used DCodes :
+    D10
+    D30
+    D51
+    D64
+    D65
+    D66
+    D67
+    D68
+    D69
+    D70
+    D71
+    D72
+    D73
+    D74
+    D75
+    D76
+*************************************************************
+
+*************************************************************
+Generating : Bottom Overlay
+      File : GD_Power_Meter_Draft.GBO
+
+    Adding Layer      : Bottom Overlay
+
+    Adding Layer      : Mechanical 1
+
+
+Used DCodes :
+    D30
+    D77
+*************************************************************
+
+*************************************************************
+Generating : Mechanical 1
+      File : GD_Power_Meter_Draft.GM1
+
+    Adding Layer      : Mechanical 1
+
+    Adding Layer      : Mechanical 1
+
+
+Used DCodes :
+    D30
+*************************************************************
+
+*************************************************************
+Generating : Drill Drawing
+      File : GD_Power_Meter_Draft.GD1
+
+    Adding Layer      : Mechanical 1
+
+    Adding Drill Pair : Top Layer-Bottom Layer
+
+    Adding Layer      : Drill Drawing
+
+
+Used DCodes :
+    D24
+    D30
+    D48
+    D78
+*************************************************************
+
+*************************************************************
+Generating : Drill Guide
+      File : GD_Power_Meter_Draft.GG1
+
+    Adding Layer      : Mechanical 1
+
+    Adding Drill Pair : Top Layer-Bottom Layer
+
+    Adding Layer      : Drill Guide
+
+
+Used DCodes :
+    D30
+    D78
+*************************************************************
+
