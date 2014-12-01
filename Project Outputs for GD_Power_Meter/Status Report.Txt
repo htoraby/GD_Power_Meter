@@ -1,12 +1,9 @@
-Output: NC Drill Files
-Type  : NC Drill
-From  : Project [GD_Power_Meter.PrjPCB]
-   Generated File[GD_Power_Meter_Draft-Plated.TXT]
-   Generated File[GD_Power_Meter_Draft.LDP]
-   Generated File[GD_Power_Meter_Draft.DRR]
+Output: Bill of Materials
+Type  : BOM
+From  : Variant [[No Variations]] of Project [GD_Power_Meter.PrjPCB]
 
 
-Files Generated   : 3
+Files Generated   : 0
 Documents Printed : 0
 
-Finished Output Generation At 15:58:02 On 2014/11/29
+Finished Output Generation At 10:51:26 On 2014-12-01
