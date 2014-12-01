@@ -1,0 +1,33 @@
+Field=P/N~String~P/N~100|Field=Description~String~Description~100|Field=Designator~String~Designator~100|Field=Footprint~String~Footprint~100|Field=Manufacturer~String~Manufacturer~100|Field=Manufacturer P/N~String~Manufacturer P/N~100|Field=Quantity~Integer~Quantity~100|ReportField=Currency~<none>|ReportField=ProductionQuantity~1|ReportField=ProjectFileName~GD_Power_Meter.PrjPCB|ReportField=ProjectFullPath~C:\Users\jeqi\Documents\GD_Power_Meter\GD_Power_Meter.PrjPCB|ReportField=Title~Bill of Materials For Project [GD_Power_Meter.PrjPCB] (No PCB Document Selected)|ReportField=TotalQuantity~79|ReportField=ReportTime~10:51:20|ReportField=ReportDate~2014-12-01|ReportField=ReportDateTime~2014-12-01 10:51:20|ReportField=OutputName~Bill of Materials|ReportField=OutputType~BOM_PartType|ReportField=GeneratorName~BOM|ReportField=GeneratorDescription~Bill of Materials|ReportField=VariantName~None|ReportField=Project~Power_Meter|ReportField=PCB P/N~GDPB00001|ReportField=PCBA P/N~GDPA00001|ReportField=Address1~|ReportField=Address2~|ReportField=Address3~|ReportField=Address4~|ReportField=Application_BuildNumber~|ReportField=ApprovedBy~|ReportField=Author~|ReportField=CheckedBy~|ReportField=CompanyName~|ReportField=CurrentDate~2014-12-01|ReportField=CurrentTime~10:50:32|ReportField=Date~|ReportField=DocumentFullPathAndName~C:\Users\jeqi\Documents\GD_Power_Meter\GD_Power_Meter_1.SchDoc|ReportField=DocumentName~GD_Power_Meter_1.SchDoc|ReportField=DocumentNumber~|ReportField=DrawnBy~|ReportField=Engineer~|ReportField=ImagePath~|ReportField=ModifiedDate~2014-12-01|ReportField=Organization~|ReportField=PCBA PN~PA00013|ReportField=PCB PN~PB10013|ReportField=ProjectName~GD_Power_Meter.PrjPCB|ReportField=Revision~|ReportField=Rule~|ReportField=SheetNumber~|ReportField=SheetTotal~|ReportField=Time~|ReportField=Title~TOP|ReportField=DataSourceFileName~GD_Power_Meter.PrjPCB|ReportField=DataSourceFullPath~C:\Users\jeqi\Documents\GD_Power_Meter\GD_Power_Meter.PrjPCB
+EC00014|CAP SMD CR X7R 50V 10% 0.1uF 0805 ROHS|C1, C2, C8, C16, C18, C20, C90|C0805|YAGEO|CC0805KRX7R9BB104|7
+EC00018|CAP SMD CR X7R 50V 10% 10nF 0805 ROHS|C3|C0805|Murata|GRM216R71H103KA01D|1
+EC00095|CAP 35V 20% 330uF 10X16X0.6MM ROHS£¬7000hours|C4, C6|CA10X16P5|NIPPON CHEMI-CON|EKY350ELL331MJ16S|2
+EC00002|CAP SMD CR X7R 50V 10% 1uF 0805 ROHS|C5, C7, C21|C0805|YAGEO|CC0805KKX7R9BB105|3
+EC00079|CAP SMD X7R 50V 10% 0.033uF 0805 ROHS|C11, C12, C15, C19, C22, C23, C61, C63, C64|C0805|Murata|GRM219R71H333KA01|9
+EC00034|CAP SMD CR X5R 16V 10% 10uF 0805 ROHS|C13, C17|C0805|Murata|GRM21BR61C106KE15|2
+EC00017|CAP SMD C0G 50V 5% 33pF 0805 ROHS|C60, C62|C0805|YAGEO|CC0805JRNPO9BN330|2
+EE00006|Header, 5-Pin , 2p+ 3p|CN2|KF7.62-5P||KF7.62-5P|1
+EE00005|Header, 4-Pin|CN3|HT5.08-4P-H||HT5.08-4 Bend|1
+EE00007|Header, 6-Pin|CN4|HT5.08-6P-H||HT5.08-6P Bend|1
+EU00043|IC PROGRAMMABLE PRECISION REFERENCES,2.5-20V,0.5%,SMD,ROHS|D1|SOT23-321|DIODES|ZTL431BFTA|1
+ED00007|DIODE TVS 7V 12V 17A 400W SOT-23 SMD ROHS|D2|SOT23-123|BOURNS|CDSOT23-SM712|1
+EE00002||D3|SMB|Bourns|SMBJ7.0A|1
+ED00056|3.0mm Round Type LED Lamps Yellow/Green|D4|LED_DIP|EVERLIGHT|1224-10SYGC/S530-E2|1
+EF00005|FUSE,Ceramic,1.6A,25A@250VAC,8.5x8mm,ROHS|F1|392XXXX000|LITTELFUSE|39211600440|1
+ER00026|RES THICK_FILM SMD 0 OHM 5% 1/8W ROHS 0805|R1, R21, R23|R0805|YAGEO|RC0805JR-070RL|3
+EE00008||R2|R0805|YAGEO||1
+ER00213|RES THICK_FILM SMD 10K ohm 5% 1/10W ROHS 0603|R3, R4, R5, R6, R7, R8, R9, R90|R0603|YAGEO|RC0603JR-1310KL|8
+ER00028|RES THICK_FILM SMD 1K 1% 1/8W ROHS 0805|R11, R14, R15, R19, R20, R25, R72, R78, R84|R0805|YAGEO|RC0805FR-071KL|9
+ER00273|RES THIN_FILM SMD 3.32 ohm 0.5% 1/8W ¡À50ppm/¡æ ROHS 0805|R12, R13, R16, R18, R22, R24|R0805|YAGEO|RT0805DRE073R32|6
+ER00108|RES THICK_FILM 2.49K 1% 1/8W ROHS SMD 0805|R32|R0805|YAGEO|RC0805FR-072K49L|1
+ER00275|RES Film Leaded 165K 0.5% 3W ROHS ¡À25ppm/¡æ MFR1550|R70, R76, R82|MFR5W2P5|Viking|MFR1550DACR1653|3
+ER00280|RES,THIN_FILM,130 ohm,0.5%	,1/10W,¡À25ppm/¡æ,ROHS,0805,SMD|R71, R77, R83|R0805|VIKING|AR05DTC1300|3
+EE00003||RT1|NTC8_5x6P5|SEMITEC|5D2-08LD|1
+EE00004|²à²¦ 4Î»|S1|SW_4P|WE|418317270904|1
+ET00010|Voltage transformer,2mA/2mA,THT,ROHS|T4, T5, T6|ZMPT107|ZEMING|ZMPT107|3
+EE00001||U1|LH05X|Mornsun|LH05-10B05|1
+EU00042|IC Energy Measurement,Irms,VA,VAR,Vrms,Watt,Output:Pulsed&SPI,SOIC_W-24,ROHS|U2|SOIC24-W|ANALOG DEVICES|ADE7758ARWZRL|1
+EU00041|IC 5V,RS-485,10Mbps,16KV,TRANSCEIVERS,SOIC-8,ROHS|U4|SOIC8|Texas Instruments|SN65HVD08D|1
+EU00033|IC 8-bit UART SPI I2C,SOIC18-W,SMD,ROHS|U8|SO18|Microchip|PIC16F1827-I/SO|1
+ER00200|MOV 320V 14MM 80J LDFR ROHS|VAR1|VAR16_7X6_6P7_5|LITTELFUSE|V320LA20AP|1
+EX00008|XTAL 10MHz 18PF +/-30PPM,3.2mmWx5mmLx1.3mmH,-40~85,RoHS,SMD|X2|XTAL_5X3_2|ABRACON|ABM3C-10.000MHZ-D4Y-T|1
