@@ -1,0 +1,68 @@
+20120717 michael
+
+NEW: add SLIP cmd for getting temperature
+
+20120626 michael
+
+NEW: add 7758 initia check in case of register value changing, checking per 3 min
+
+20120618 michael
+
+1 BUG: add fillrspbuff() funtion to deal with escape word "C0","DB"
+
+20120611 michael
+CHG: add active power and apparent power 2 times average
+NEW: add temperature sample, but not used yet
+
+20120522 michael
+CHG: change AD7758 running mode.
+CHG: change samlpe AD7758 interval from 1s to 400ms to avoid 64A load active overflow, and adjust the timer.
+CHG: calculate acculmulate energy change from apparent power to active power.
+CHG: add Frequency metering for phase B and phase C
+
+20120502 michael
+1 -CHG: Frequency refor to phase
+2 -BUG: phase C active and apparent power is wrong.
+3 -CHG: change SPI rate back to 250K.
+
+20120428 michael
+1 -CHG: sample per 1s, and caculate energy.
+
+
+20120428 michael
+1 -CHG: delete debug infor
+2 -CHG: update Slip CMD: move Freqhigh->VoltageHigh, move Freqlow -> currenthihg
+
+20120427 michael
+1 -NEW: remove Sa9904, add ADE7758 driver.
+2 -CHG: change SPI SLK to 500K.
+3 -CHG: update Slip CMD E001 E002 E003.
+4 -CHG: add Slip CMD sendDEV.
+5 -BUG: Slip cmd bug. rs485_rsp_finish should be rs485_cmd_finish at "PT_WAIT_UNTIL(pt, rs485_rsp_finish == 1);"
+
+20120417 michael
+1 -CHG: for base version, add ADC driver.
+
+20130321
+1 - NEW: add OS supporting
+2 - NEW: optimize code for rooming OS
+3 - BUG: try to active drop issue, but could not reproduce it after testing two days with old code and new add-OS code.
+
+20130328
+1 - NEW: upgrade to version 3.01
+2 - NEW: fix a small bug of SLIP packet, the CRC byte also need to consider stuff byte 0xDB
+
+20131217
+1 - NEW: fixed slip device address to 0x0f instead of reading from i/o;
+2 - CHG: fixed a potential bug for shift bit operations;
+3 - NEW: update to version 3.03
+
+
+
+
+
+
+
+
+
+
