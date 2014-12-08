@@ -9,10 +9,12 @@
 	; Compiler options:
 	;
 	; -oPower_Meter.cof -mPower_Meter.map --summary=default \
-	; --output=default main.p1 modbus.p1 ADE7758.p1 util.p1 --chip=16F1827 \
-	; -P --runtime=default --opt=default -D__DEBUG=1 --rom=default \
-	; --ram=default -g --asmlist --errformat=Error   [%n] %f; %l.%c %s \
-	; --msgformat=Advisory[%n] %s --warnformat=Warning [%n] %f; %l.%c %s
+	; --output=default ADE7758.p1 main.p1 modbus.p1 util.p1 \
+	; C:\Users\jeqi\Documents\GD_Power_Meter\Docs\FW\PowerSupply\Power_Meter.hex \
+	; --chip=16F1827 -P --runtime=default --opt=default -D__DEBUG=1 \
+	; --rom=default --ram=default -g --asmlist \
+	; --errformat=Error   [%n] %f; %l.%c %s --msgformat=Advisory[%n] %s \
+	; --warnformat=Warning [%n] %f; %l.%c %s
 	;
 
 

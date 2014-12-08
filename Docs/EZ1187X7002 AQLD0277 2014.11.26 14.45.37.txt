@@ -1,0 +1,4087 @@
+
+--安规测试：通过
+----Set Powersource:3P, 220V, 50Hz
+--Power Source set:Pass.
+----Login on FT mode :3770ms/1time
+----Login on FT mode :3769ms/2time
+----Login on FT mode :3110ms/3time
+[Send]:ft sku new
+[Receive]:00
+
+SKU: EZ1187X7002
+
+ENLOGIC>
+[Send]:ft serial
+[Receive]:00
+
+SERIAL: AQLD0277
+
+ENLOGIC>
+[Send]:ft mac
+[Receive]:00
+
+MAC Addr: C8-45-44-20-07-7C
+
+ENLOGIC>
+----SKU#,serial# scaned are the same with the PDU.
+[Send]:sys ver
+[Receive]:00
+
+Firmware   Version : 2.0b
+
+Bootloader Version : 2.22
+
+LANGUAGE   Version : 3.02
+
+Web        Version : 6.39.2
+
+ENLOGIC>
+----sys ver
+
+E000
+
+Firmware   Version : 2.0b
+
+Bootloader Version : 2.22
+
+LANGUAGE   Version : 3.02
+
+Web        Version : 6.39.2
+
+ENLOGIC>
+--FW version result:
+FW version:NMC 2.0b Bootloader 2.22 Language 3.02 WEB 6.39.2:NMC 2.0b Bootloader 2.22 Language 3.02 WEB 6.39.2:Pass
+[Send]:dev ver 15
+[Receive]:00
+
+version: 3.03
+
+ENLOGIC>
+--Power Board Version3.03
+----Get SKU config for FT test
+[Send]:ft cali setcali temp 1 1 30
+[Receive]:00
+
+ENLOGIC>
+--ft cali setcali temp 1 1 30
+
+E000
+
+ENLOGIC>
+--切换CT至L1
+----Open Phase 1
+--Accuracy fitting: 1 time.
+----Fitting accu curve,Load:20A,PF=1.0
+--等待10s使电阻值稳定
+--Current:16.76
+--Current:16.71
+--负载加载成功
+----Send: get powerreg
+[Send]:ft get powerreg
+[Receive]:00
+
+Get PowerSupply Chip #1 Register
+
+                PHASE 1		PHASE 2		PHASE 3
+
+Frequency1      800		800		800
+
+Voltage1        791465		797676		797010
+
+Current1        583833		579		636
+
+ActivePower1    3703		0		0
+
+ApparentPower1  3736		3		4
+
+Get PowerSupply Chip #2 Register
+
+                PHASE 1		PHASE 2		PHASE 3
+
+Frequency2      800		800		800
+
+Voltage2        789369		795459		793997
+
+Current2        584578		648		649
+
+ActivePower2    3690		0		0
+
+ApparentPower2  3723		3		4
+
+ENLOGIC>
+----Receive: ft get powerreg
+
+E000
+
+Get PowerSupply Chip #1 Register
+
+                PHASE 1		PHASE 2		PHASE 3
+
+Frequency1      800		800		800
+
+Voltage1        791465		797676		797010
+
+Current1        583833		579		636
+
+ActivePower1    3703		0		0
+
+ApparentPower1  3736		3		4
+
+Get PowerSupply Chip #2 Register
+
+                PHASE 1		PHASE 2		PHASE 3
+
+Frequency2      800		800		800
+
+Voltage2        789369		795459		793997
+
+Current2        584578		648		649
+
+ActivePower2    3690		0		0
+
+ApparentPower2  3723		3		4
+
+ENLOGIC>
+--Power Meter Value:
+Frequence:50.00000
+Voltage:220.44000
+Current:16.72000
+Active Power:3685.75680
+Apparent Power:3685.75680
+compensation(R):0.00000
+----Fitting accu curve,Load:5A,PF=1.0
+--
+Frequence:50.000000
+Voltage:220.060000
+Current:5.020000
+Active Power:0.000000
+Apparent Power:0.000000
+
+----Load Set Sucessfully.
+--负载加载成功
+----Send: get powerreg
+[Send]:ft get powerreg
+[Receive]:00
+
+Get PowerSupply Chip #1 Register
+
+                PHASE 1		PHASE 2		PHASE 3
+
+Frequency1      800		800		800
+
+Voltage1        795113		797040		795992
+
+Current1        174922		593		637
+
+ActivePower1    1112		0		0
+
+ApparentPower1  1123		3		4
+
+Get PowerSupply Chip #2 Register
+
+                PHASE 1		PHASE 2		PHASE 3
+
+Frequency2      800		800		800
+
+Voltage2        794001		794616		793798
+
+Current2        175122		607		686
+
+ActivePower2    1110		0		0
+
+ApparentPower2  1120		3		4
+
+ENLOGIC>
+----Receive: ft get powerreg
+
+E000
+
+Get PowerSupply Chip #1 Register
+
+                PHASE 1		PHASE 2		PHASE 3
+
+Frequency1      800		800		800
+
+Voltage1        795113		797040		795992
+
+Current1        174922		593		637
+
+ActivePower1    1112		0		0
+
+ApparentPower1  1123		3		4
+
+Get PowerSupply Chip #2 Register
+
+                PHASE 1		PHASE 2		PHASE 3
+
+Frequency2      800		800		800
+
+Voltage2        794001		794616		793798
+
+Current2        175122		607		686
+
+ActivePower2    1110		0		0
+
+ApparentPower2  1120		3		4
+
+ENLOGIC>
+--Power Meter Value:
+Frequence:49.99900
+Voltage:220.38000
+Current:5.02000
+Active Power:1106.30760
+Apparent Power:1106.30760
+compensation(R):0.00000
+----Fitting accu curve,Load:3A,PF=1.0
+--
+Frequence:49.999000
+Voltage:220.190000
+Current:3.010000
+Active Power:0.000000
+Apparent Power:0.000000
+
+----Load Set Sucessfully.
+--负载加载成功
+----Send: get powerreg
+[Send]:ft get powerreg
+[Receive]:00
+
+Get PowerSupply Chip #1 Register
+
+                PHASE 1		PHASE 2		PHASE 3
+
+Frequency1      800		800		800
+
+Voltage1        795690		796058		795599
+
+Current1        104920		615		622
+
+ActivePower1    667		0		0
+
+ApparentPower1  675		3		4
+
+Get PowerSupply Chip #2 Register
+
+                PHASE 1		PHASE 2		PHASE 3
+
+Frequency2      800		800		800
+
+Voltage2        794475		795024		794076
+
+Current2        104926		613		672
+
+ActivePower2    667		0		0
+
+ApparentPower2  674		3		4
+
+ENLOGIC>
+----Receive: ft get powerreg
+
+E000
+
+Get PowerSupply Chip #1 Register
+
+                PHASE 1		PHASE 2		PHASE 3
+
+Frequency1      800		800		800
+
+Voltage1        795690		796058		795599
+
+Current1        104920		615		622
+
+ActivePower1    667		0		0
+
+ApparentPower1  675		3		4
+
+Get PowerSupply Chip #2 Register
+
+                PHASE 1		PHASE 2		PHASE 3
+
+Frequency2      800		800		800
+
+Voltage2        794475		795024		794076
+
+Current2        104926		613		672
+
+ActivePower2    667		0		0
+
+ApparentPower2  674		3		4
+
+ENLOGIC>
+--Power Meter Value:
+Frequence:49.99900
+Voltage:220.33000
+Current:3.02000
+Active Power:665.39660
+Apparent Power:665.39660
+compensation(R):0.00000
+----Fitting accu curve,Load:1A,PF=1.0
+--
+Frequence:49.999000
+Voltage:220.380000
+Current:1.020000
+Active Power:0.000000
+Apparent Power:0.000000
+
+----Load Set Sucessfully.
+--负载加载成功
+----Send: get powerreg
+[Send]:ft get powerreg
+[Receive]:00
+
+Get PowerSupply Chip #1 Register
+
+                PHASE 1		PHASE 2		PHASE 3
+
+Frequency1      800		800		800
+
+Voltage1        796859		795668		794859
+
+Current1        35123		631		652
+
+ActivePower1    223		0		0
+
+ApparentPower1  226		3		4
+
+Get PowerSupply Chip #2 Register
+
+                PHASE 1		PHASE 2		PHASE 3
+
+Frequency2      800		800		800
+
+Voltage2        795138		794569		794576
+
+Current2        35085		600		660
+
+ActivePower2    223		0		0
+
+ApparentPower2  225		3		4
+
+ENLOGIC>
+----Receive: ft get powerreg
+
+E000
+
+Get PowerSupply Chip #1 Register
+
+                PHASE 1		PHASE 2		PHASE 3
+
+Frequency1      800		800		800
+
+Voltage1        796859		795668		794859
+
+Current1        35123		631		652
+
+ActivePower1    223		0		0
+
+ApparentPower1  226		3		4
+
+Get PowerSupply Chip #2 Register
+
+                PHASE 1		PHASE 2		PHASE 3
+
+Frequency2      800		800		800
+
+Voltage2        795138		794569		794576
+
+Current2        35085		600		660
+
+ActivePower2    223		0		0
+
+ApparentPower2  225		3		4
+
+ENLOGIC>
+--Power Meter Value:
+Frequence:49.99900
+Voltage:220.36000
+Current:1.02000
+Active Power:224.76720
+Apparent Power:224.76720
+compensation(R):0.00000
+--ab value does not plus parameter
+----Accuracy fitting Pass1time.
+----Send: cali sample freq 1 1 0.0625 0
+----Receive: ft cali sample freq 1 1 0.0625 0
+
+E000
+
+Get PowerSupply Chip #1 Phase #1 Frequency Calibration Parameter
+
+Y = 0.062500 * X + 0.000000
+
+ENLOGIC>
+----Send: cali sample vol 1 1 0.000277 0
+----Receive: ft cali sample vol 1 1 0.000277 0
+
+E000
+
+Get PowerSupply Chip #1 Phase #1 Voltage Calibration Parameter
+
+Y = 0.000277 * X + 0.000000
+
+ENLOGIC>
+----Send: cali sample cur 1 1 0.00002865 0.01356706 139921 0.00002861 0.01502973
+----Receive: ft cali sample cur 1 1 0.00002865 0.01356706 139921 0.00002861 0.01502973
+
+E000
+
+Get PowerSupply Chip #1 Phase #1 Current Calibration Parameter
+
+Y1 = 0.00002865 * X1 + 0.01356706
+
+current register point value : 139921
+
+Y2 = 0.00002861 * X2 + 0.01502973
+
+ENLOGIC>
+----Send: cali sample act 1 1 0.992409 3.460091 890 0.995542 -0.735052
+----Receive: ft cali sample act 1 1 0.992409 3.460091 890 0.995542 -0.735052
+
+E000
+
+Get PowerSupply Chip #1 Phase #1 Activepower Calibration Parameter
+
+Y1 = 0.992409 * X1 + 3.460091
+
+activerpower register point value : 890
+
+Y2 = 0.995542 * X2 + -0.735052
+
+ENLOGIC>
+----Send: cali sample app 1 1 0.981357 2.980464 899 0.987160 -2.273132
+----Receive: ft cali sample app 1 1 0.981357 2.980464 899 0.987160 -2.273132
+
+E000
+
+Get PowerSupply Chip #1 Phase #1 Apparentpower Calibration Parameter
+
+Y1 = 0.981357 * X1 + 2.980464
+
+apparentpower register point value : 899
+
+Y2 = 0.987160 * X2 + -2.273132
+
+ENLOGIC>
+--精度验证，加载：2A, PF=1.00
+----Set the load to 2.0 PF=1.0
+--
+Frequence:49.999000
+Voltage:220.280000
+Current:2.020000
+Active Power:0.000000
+Apparent Power:0.000000
+
+----Load Set Sucessfully.
+--负载加载成功
+----Waiting 2s
+----Power Meter Value:
+Frequence:49.999000
+Voltage:220.270000
+Current:2.020000
+Active Power:444.945400
+Apparent Power:444.945400
+--Power Meter Value(add R):
+Frequence:49.999000
+Voltage:220.270000
+Current:2.020000
+Active Power:444.945400
+Apparent Power:444.945400
+compensation(R):0.000000
+----Send: get power 1 1
+[Send]:ft get power 1 1
+[Receive]:00
+
+Get powersupply Chip #1 Phase #1 Feature
+
+frequency     : 50.0Hz
+
+voltage       : 221.0V
+
+current       : 2.021A
+
+activepower   : 445.1W
+
+reactivepower : 21.1W
+
+apparentpower : 445.6W
+
+powerfactor   : 0.00 
+
+ENLOGIC>
+--ft get power 1 1
+
+E000
+
+Get powersupply Chip #1 Phase #1 Feature
+
+frequency     : 50.0Hz
+
+voltage       : 221.0V
+
+current       : 2.021A
+
+activepower   : 445.1W
+
+reactivepower : 21.1W
+
+apparentpower : 445.6W
+
+powerfactor   : 0.00 
+
+ENLOGIC>
+--++Phase 1 ++精度验证：成功:2.0A,PF=1.0,offset 0.000020,0.003269,0.000495,0.000302,0.001426,
+----Set the load to 12.0 PF=1.0
+--精度验证，加载：12A, PF=1.00
+--
+Frequence:50.000000
+Voltage:219.650000
+Current:12.000000
+Active Power:0.000000
+Apparent Power:0.000000
+
+----Load Set Sucessfully.
+--负载加载成功
+----Waiting 2s
+----Power Meter Value:
+Frequence:49.999000
+Voltage:219.700000
+Current:12.010000
+Active Power:2638.597000
+Apparent Power:2638.597000
+--Power Meter Value(add R):
+Frequence:49.999000
+Voltage:219.700000
+Current:12.010000
+Active Power:2638.597000
+Apparent Power:2638.597000
+compensation(R):0.000000
+----Send: get power 1 1
+[Send]:ft get power 1 1
+[Receive]:00
+
+Get powersupply Chip #1 Phase #1 Feature
+
+frequency     : 50.0Hz
+
+voltage       : 219.7V
+
+current       : 12.016A
+
+activepower   : 2651.4W
+
+reactivepower : 51.5W
+
+apparentpower : 2651.9W
+
+powerfactor   : 0.00 
+
+ENLOGIC>
+--ft get power 1 1
+
+E000
+
+Get powersupply Chip #1 Phase #1 Feature
+
+frequency     : 50.0Hz
+
+voltage       : 219.7V
+
+current       : 12.016A
+
+activepower   : 2651.4W
+
+reactivepower : 51.5W
+
+apparentpower : 2651.9W
+
+powerfactor   : 0.00 
+
+ENLOGIC>
+--++Phase 1 ++精度验证：成功:12.0A,PF=1.0,offset 0.000020,0.000000,0.000500,0.004852,0.005042,
+----Set the load to 20.0 PF=1.0
+--精度验证，加载：20A, PF=1.00
+--等待10s使电阻值稳定
+--Current:16.77
+--Current:16.71
+--负载加载成功
+----Waiting 2s
+----Power Meter Value:
+Frequence:49.999000
+Voltage:219.330000
+Current:16.700000
+Active Power:3662.811000
+Apparent Power:3662.811000
+--Power Meter Value(add R):
+Frequence:49.999000
+Voltage:219.330000
+Current:16.700000
+Active Power:3662.811000
+Apparent Power:3662.811000
+compensation(R):0.000000
+----Send: get power 1 1
+[Send]:ft get power 1 1
+[Receive]:00
+
+Get powersupply Chip #1 Phase #1 Feature
+
+frequency     : 50.0Hz
+
+voltage       : 219.5V
+
+current       : 16.719A
+
+activepower   : 3679.8W
+
+reactivepower : 60.7W
+
+apparentpower : 3680.3W
+
+powerfactor   : 0.00 
+
+ENLOGIC>
+--ft get power 1 1
+
+E000
+
+Get powersupply Chip #1 Phase #1 Feature
+
+frequency     : 50.0Hz
+
+voltage       : 219.5V
+
+current       : 16.719A
+
+activepower   : 3679.8W
+
+reactivepower : 60.7W
+
+apparentpower : 3680.3W
+
+powerfactor   : 0.00 
+
+ENLOGIC>
+--++Phase 1 ++精度验证：成功:20.0A,PF=1.0,offset 0.000020,0.000593,0.000539,0.003854,0.003990,
+----Set the load to 20.0 PF=1.0
+--精度验证，加载：20A, PF=1.00
+--等待10s使电阻值稳定
+--Current:16.72
+--负载加载成功
+----Waiting 2s
+----Power Meter Value:
+Frequence:50.000000
+Voltage:219.330000
+Current:16.710000
+Active Power:3665.004300
+Apparent Power:3665.004300
+--Power Meter Value(add R):
+Frequence:50.000000
+Voltage:219.330000
+Current:16.710000
+Active Power:3665.004300
+Apparent Power:3665.004300
+compensation(R):0.000000
+----Send: get power 1 1
+[Send]:ft get power 1 1
+[Receive]:00
+
+Get powersupply Chip #1 Phase #1 Feature
+
+frequency     : 50.0Hz
+
+voltage       : 219.1V
+
+current       : 16.717A
+
+activepower   : 3679.8W
+
+reactivepower : 19.2W
+
+apparentpower : 3679.8W
+
+powerfactor   : 0.00 
+
+ENLOGIC>
+--ft get power 1 1
+
+E000
+
+Get powersupply Chip #1 Phase #1 Feature
+
+frequency     : 50.0Hz
+
+voltage       : 219.1V
+
+current       : 16.717A
+
+activepower   : 3679.8W
+
+reactivepower : 19.2W
+
+apparentpower : 3679.8W
+
+powerfactor   : 0.00 
+
+ENLOGIC>
+--++Phase 1 ++精度验证：成功:20.0A,PF=1.0,offset 0.000020,0.000912,0.001018,0.004776,0.004776,
+----Phase 1 finished accuracy calibrate and verify
+--切换CT至L2
+----Open Phase 2
+--Accuracy fitting: 1 time.
+----Fitting accu curve,Load:20A,PF=1.0
+--等待10s使电阻值稳定
+--Current:16.77
+--Current:16.72
+--负载加载成功
+----Send: get powerreg
+[Send]:ft get powerreg
+[Receive]:00
+
+Get PowerSupply Chip #1 Register
+
+                PHASE 1		PHASE 2		PHASE 3
+
+Frequency1      800		800		800
+
+Voltage1        797700		791697		796848
+
+Current1        544		584265		616
+
+ActivePower1    0		3708		0
+
+ApparentPower1  3		3740		4
+
+Get PowerSupply Chip #2 Register
+
+                PHASE 1		PHASE 2		PHASE 3
+
+Frequency2      800		800		800
+
+Voltage2        797221		789601		795326
+
+Current2        677		584739		694
+
+ActivePower2    0		3688		0
+
+ApparentPower2  4		3724		4
+
+ENLOGIC>
+----Receive: ft get powerreg
+
+E000
+
+Get PowerSupply Chip #1 Register
+
+                PHASE 1		PHASE 2		PHASE 3
+
+Frequency1      800		800		800
+
+Voltage1        797700		791697		796848
+
+Current1        544		584265		616
+
+ActivePower1    0		3708		0
+
+ApparentPower1  3		3740		4
+
+Get PowerSupply Chip #2 Register
+
+                PHASE 1		PHASE 2		PHASE 3
+
+Frequency2      800		800		800
+
+Voltage2        797221		789601		795326
+
+Current2        677		584739		694
+
+ActivePower2    0		3688		0
+
+ApparentPower2  4		3724		4
+
+ENLOGIC>
+--Power Meter Value:
+Frequence:49.99900
+Voltage:219.76000
+Current:16.71000
+Active Power:3672.18960
+Apparent Power:3672.18960
+compensation(R):0.00000
+----Fitting accu curve,Load:5A,PF=1.0
+--
+Frequence:49.999000
+Voltage:220.070000
+Current:5.010000
+Active Power:0.000000
+Apparent Power:0.000000
+
+----Load Set Sucessfully.
+--负载加载成功
+----Send: get powerreg
+[Send]:ft get powerreg
+[Receive]:00
+
+Get PowerSupply Chip #1 Register
+
+                PHASE 1		PHASE 2		PHASE 3
+
+Frequency1      800		800		800
+
+Voltage1        797214		794213		795971
+
+Current1        577		174795		617
+
+ActivePower1    0		1112		0
+
+ApparentPower1  3		1122		4
+
+Get PowerSupply Chip #2 Register
+
+                PHASE 1		PHASE 2		PHASE 3
+
+Frequency2      800		800		800
+
+Voltage2        796781		793179		794639
+
+Current2        684		174945		663
+
+ActivePower2    0		1107		0
+
+ApparentPower2  4		1118		4
+
+ENLOGIC>
+----Receive: ft get powerreg
+
+E000
+
+Get PowerSupply Chip #1 Register
+
+                PHASE 1		PHASE 2		PHASE 3
+
+Frequency1      800		800		800
+
+Voltage1        797214		794213		795971
+
+Current1        577		174795		617
+
+ActivePower1    0		1112		0
+
+ApparentPower1  3		1122		4
+
+Get PowerSupply Chip #2 Register
+
+                PHASE 1		PHASE 2		PHASE 3
+
+Frequency2      800		800		800
+
+Voltage2        796781		793179		794639
+
+Current2        684		174945		663
+
+ActivePower2    0		1107		0
+
+ApparentPower2  4		1118		4
+
+ENLOGIC>
+--Power Meter Value:
+Frequence:50.00000
+Voltage:220.10000
+Current:5.00000
+Active Power:1100.50000
+Apparent Power:1100.50000
+compensation(R):0.00000
+----Fitting accu curve,Load:3A,PF=1.0
+--
+Frequence:49.999000
+Voltage:220.200000
+Current:3.000000
+Active Power:0.000000
+Apparent Power:0.000000
+
+----Load Set Sucessfully.
+--负载加载成功
+----Send: get powerreg
+[Send]:ft get powerreg
+[Receive]:00
+
+Get PowerSupply Chip #1 Register
+
+                PHASE 1		PHASE 2		PHASE 3
+
+Frequency1      800		800		800
+
+Voltage1        797146		795573		796375
+
+Current1        546		104932		624
+
+ActivePower1    0		668		0
+
+ApparentPower1  3		674		4
+
+Get PowerSupply Chip #2 Register
+
+                PHASE 1		PHASE 2		PHASE 3
+
+Frequency2      800		800		800
+
+Voltage2        796669		793321		794041
+
+Current2        679		105026		654
+
+ActivePower2    0		664		0
+
+ApparentPower2  4		671		4
+
+ENLOGIC>
+----Receive: ft get powerreg
+
+E000
+
+Get PowerSupply Chip #1 Register
+
+                PHASE 1		PHASE 2		PHASE 3
+
+Frequency1      800		800		800
+
+Voltage1        797146		795573		796375
+
+Current1        546		104932		624
+
+ActivePower1    0		668		0
+
+ApparentPower1  3		674		4
+
+Get PowerSupply Chip #2 Register
+
+                PHASE 1		PHASE 2		PHASE 3
+
+Frequency2      800		800		800
+
+Voltage2        796669		793321		794041
+
+Current2        679		105026		654
+
+ActivePower2    0		664		0
+
+ApparentPower2  4		671		4
+
+ENLOGIC>
+--Power Meter Value:
+Frequence:49.99900
+Voltage:220.22000
+Current:3.00000
+Active Power:660.66000
+Apparent Power:660.66000
+compensation(R):0.00000
+----Fitting accu curve,Load:1A,PF=1.0
+--
+Frequence:50.000000
+Voltage:220.320000
+Current:1.010000
+Active Power:0.000000
+Apparent Power:0.000000
+
+----Load Set Sucessfully.
+--负载加载成功
+----Send: get powerreg
+[Send]:ft get powerreg
+[Receive]:00
+
+Get PowerSupply Chip #1 Register
+
+                PHASE 1		PHASE 2		PHASE 3
+
+Frequency1      800		800		800
+
+Voltage1        797110		796467		796449
+
+Current1        553		35107		594
+
+ActivePower1    0		223		0
+
+ApparentPower1  3		225		4
+
+Get PowerSupply Chip #2 Register
+
+                PHASE 1		PHASE 2		PHASE 3
+
+Frequency2      800		800		800
+
+Voltage2        796601		793943		793491
+
+Current2        694		35069		658
+
+ActivePower2    0		221		0
+
+ApparentPower2  4		224		4
+
+ENLOGIC>
+----Receive: ft get powerreg
+
+E000
+
+Get PowerSupply Chip #1 Register
+
+                PHASE 1		PHASE 2		PHASE 3
+
+Frequency1      800		800		800
+
+Voltage1        797110		796467		796449
+
+Current1        553		35107		594
+
+ActivePower1    0		223		0
+
+ApparentPower1  3		225		4
+
+Get PowerSupply Chip #2 Register
+
+                PHASE 1		PHASE 2		PHASE 3
+
+Frequency2      800		800		800
+
+Voltage2        796601		793943		793491
+
+Current2        694		35069		658
+
+ActivePower2    0		221		0
+
+ApparentPower2  4		224		4
+
+ENLOGIC>
+--Power Meter Value:
+Frequence:49.99900
+Voltage:220.30000
+Current:1.01000
+Active Power:222.50300
+Apparent Power:222.50300
+compensation(R):0.00000
+--ab value does not plus parameter
+----Accuracy fitting Pass1time.
+----Send: cali sample freq 1 2 0.0625 0
+----Receive: ft cali sample freq 1 2 0.0625 0
+
+E000
+
+Get PowerSupply Chip #1 Phase #2 Frequency Calibration Parameter
+
+Y = 0.062500 * X + 0.000000
+
+ENLOGIC>
+----Send: cali sample vol 1 2 0.000277 0
+----Receive: ft cali sample vol 1 2 0.000277 0
+
+E000
+
+Get PowerSupply Chip #1 Phase #2 Voltage Calibration Parameter
+
+Y = 0.000277 * X + 0.000000
+
+ENLOGIC>
+----Send: cali sample cur 1 2 0.00002850 0.00945678 139864 0.00002860 0.00122243
+----Receive: ft cali sample cur 1 2 0.00002850 0.00945678 139864 0.00002860 0.00122243
+
+E000
+
+Get PowerSupply Chip #1 Phase #2 Current Calibration Parameter
+
+Y1 = 0.00002850 * X1 + 0.00945678
+
+current register point value : 139864
+
+Y2 = 0.00002860 * X2 + 0.00122243
+
+ENLOGIC>
+----Send: cali sample act 1 2 0.984622 2.932189 890 0.990635 -1.086608
+----Receive: ft cali sample act 1 2 0.984622 2.932189 890 0.990635 -1.086608
+
+E000
+
+Get PowerSupply Chip #1 Phase #2 Activepower Calibration Parameter
+
+Y1 = 0.984622 * X1 + 2.932189
+
+activerpower register point value : 890
+
+Y2 = 0.990635 * X2 + -1.086608
+
+ENLOGIC>
+----Send: cali sample app 1 2 0.975851 2.936575 898 0.982311 -1.652686
+----Receive: ft cali sample app 1 2 0.975851 2.936575 898 0.982311 -1.652686
+
+E000
+
+Get PowerSupply Chip #1 Phase #2 Apparentpower Calibration Parameter
+
+Y1 = 0.975851 * X1 + 2.936575
+
+apparentpower register point value : 898
+
+Y2 = 0.982311 * X2 + -1.652686
+
+ENLOGIC>
+--精度验证，加载：2A, PF=1.00
+----Set the load to 2.0 PF=1.0
+--
+Frequence:50.000000
+Voltage:220.450000
+Current:2.010000
+Active Power:0.000000
+Apparent Power:0.000000
+
+----Load Set Sucessfully.
+--负载加载成功
+----Waiting 2s
+----Power Meter Value:
+Frequence:50.000000
+Voltage:220.280000
+Current:2.000000
+Active Power:440.560000
+Apparent Power:440.560000
+--Power Meter Value(add R):
+Frequence:50.000000
+Voltage:220.280000
+Current:2.000000
+Active Power:440.560000
+Apparent Power:440.560000
+compensation(R):0.000000
+----Send: get power 1 2
+[Send]:ft get power 1 2
+[Receive]:00
+
+Get powersupply Chip #1 Phase #2 Feature
+
+frequency     : 50.0Hz
+
+voltage       : 220.6V
+
+current       : 2.006A
+
+activepower   : 441.1W
+
+reactivepower : 2.1W
+
+apparentpower : 441.1W
+
+powerfactor   : 0.00 
+
+ENLOGIC>
+--ft get power 1 2
+
+E000
+
+Get powersupply Chip #1 Phase #2 Feature
+
+frequency     : 50.0Hz
+
+voltage       : 220.6V
+
+current       : 2.006A
+
+activepower   : 441.1W
+
+reactivepower : 2.1W
+
+apparentpower : 441.1W
+
+powerfactor   : 0.00 
+
+ENLOGIC>
+--++Phase 2 ++精度验证：成功:2.0A,PF=1.0,offset 0.000000,0.001362,0.003000,0.001135,0.001135,
+----Set the load to 12.0 PF=1.0
+--精度验证，加载：12A, PF=1.00
+--
+Frequence:49.999000
+Voltage:220.490000
+Current:11.990000
+Active Power:0.000000
+Apparent Power:0.000000
+
+----Load Set Sucessfully.
+--负载加载成功
+----Waiting 2s
+----Power Meter Value:
+Frequence:49.999000
+Voltage:219.920000
+Current:12.000000
+Active Power:2639.040000
+Apparent Power:2639.040000
+--Power Meter Value(add R):
+Frequence:49.999000
+Voltage:219.920000
+Current:12.000000
+Active Power:2639.040000
+Apparent Power:2639.040000
+compensation(R):0.000000
+----Send: get power 1 2
+[Send]:ft get power 1 2
+[Receive]:00
+
+Get powersupply Chip #1 Phase #2 Feature
+
+frequency     : 50.0Hz
+
+voltage       : 219.7V
+
+current       : 12.002A
+
+activepower   : 2635.0W
+
+reactivepower : 51.3W
+
+apparentpower : 2635.5W
+
+powerfactor   : 0.00 
+
+ENLOGIC>
+--ft get power 1 2
+
+E000
+
+Get powersupply Chip #1 Phase #2 Feature
+
+frequency     : 50.0Hz
+
+voltage       : 219.7V
+
+current       : 12.002A
+
+activepower   : 2635.0W
+
+reactivepower : 51.3W
+
+apparentpower : 2635.5W
+
+powerfactor   : 0.00 
+
+ENLOGIC>
+--++Phase 2 ++精度验证：成功:12.0A,PF=1.0,offset 0.000000,0.000910,0.000167,0.001440,0.001251,
+----Set the load to 20.0 PF=1.0
+--精度验证，加载：20A, PF=1.00
+--等待10s使电阻值稳定
+--Current:16.78
+--Current:16.73
+--负载加载成功
+----Waiting 2s
+----Power Meter Value:
+Frequence:49.999000
+Voltage:219.710000
+Current:16.720000
+Active Power:3673.551200
+Apparent Power:3673.551200
+--Power Meter Value(add R):
+Frequence:49.999000
+Voltage:219.710000
+Current:16.720000
+Active Power:3673.551200
+Apparent Power:3673.551200
+compensation(R):0.000000
+----Send: get power 1 2
+[Send]:ft get power 1 2
+[Receive]:00
+
+Get powersupply Chip #1 Phase #2 Feature
+
+frequency     : 50.0Hz
+
+voltage       : 219.6V
+
+current       : 16.724A
+
+activepower   : 3670.2W
+
+reactivepower : 11.8W
+
+apparentpower : 3670.2W
+
+powerfactor   : 0.00 
+
+ENLOGIC>
+--ft get power 1 2
+
+E000
+
+Get powersupply Chip #1 Phase #2 Feature
+
+frequency     : 50.0Hz
+
+voltage       : 219.6V
+
+current       : 16.724A
+
+activepower   : 3670.2W
+
+reactivepower : 11.8W
+
+apparentpower : 3670.2W
+
+powerfactor   : 0.00 
+
+ENLOGIC>
+--++Phase 2 ++精度验证：成功:20.0A,PF=1.0,offset 0.000020,0.000637,0.000239,0.001049,0.001049,
+----Set the load to 20.0 PF=1.0
+--精度验证，加载：20A, PF=1.00
+--等待10s使电阻值稳定
+--Current:16.73
+--负载加载成功
+----Waiting 2s
+----Power Meter Value:
+Frequence:50.000000
+Voltage:219.730000
+Current:16.720000
+Active Power:3673.885600
+Apparent Power:3673.885600
+--Power Meter Value(add R):
+Frequence:50.000000
+Voltage:219.730000
+Current:16.720000
+Active Power:3673.885600
+Apparent Power:3673.885600
+compensation(R):0.000000
+----Send: get power 1 2
+[Send]:ft get power 1 2
+[Receive]:00
+
+Get powersupply Chip #1 Phase #2 Feature
+
+frequency     : 50.0Hz
+
+voltage       : 219.5V
+
+current       : 16.733A
+
+activepower   : 3671.2W
+
+reactivepower : 9.0W
+
+apparentpower : 3671.2W
+
+powerfactor   : 0.00 
+
+ENLOGIC>
+--ft get power 1 2
+
+E000
+
+Get powersupply Chip #1 Phase #2 Feature
+
+frequency     : 50.0Hz
+
+voltage       : 219.5V
+
+current       : 16.733A
+
+activepower   : 3671.2W
+
+reactivepower : 9.0W
+
+apparentpower : 3671.2W
+
+powerfactor   : 0.00 
+
+ENLOGIC>
+--++Phase 2 ++精度验证：成功:20.0A,PF=1.0,offset 0.000000,0.001092,0.000778,0.000776,0.000776,
+----Phase 2 finished accuracy calibrate and verify
+--切换CT至L3
+----Open Phase 3
+--Accuracy fitting: 1 time.
+----Fitting accu curve,Load:20A,PF=1.0
+--等待10s使电阻值稳定
+--Current:16.77
+--Current:16.72
+--负载加载成功
+----Send: get powerreg
+[Send]:ft get powerreg
+[Receive]:00
+
+Get PowerSupply Chip #1 Register
+
+                PHASE 1		PHASE 2		PHASE 3
+
+Frequency1      800		800		800
+
+Voltage1        798355		796757		791620
+
+Current1        560		583		585571
+
+ActivePower1    0		0		3711
+
+ApparentPower1  3		3		3743
+
+Get PowerSupply Chip #2 Register
+
+                PHASE 1		PHASE 2		PHASE 3
+
+Frequency2      800		800		800
+
+Voltage2        796989		795860		788828
+
+Current2        670		625		584259
+
+ActivePower2    0		0		3686
+
+ApparentPower2  4		3		3720
+
+ENLOGIC>
+----Receive: ft get powerreg
+
+E000
+
+Get PowerSupply Chip #1 Register
+
+                PHASE 1		PHASE 2		PHASE 3
+
+Frequency1      800		800		800
+
+Voltage1        798355		796757		791620
+
+Current1        560		583		585571
+
+ActivePower1    0		0		3711
+
+ApparentPower1  3		3		3743
+
+Get PowerSupply Chip #2 Register
+
+                PHASE 1		PHASE 2		PHASE 3
+
+Frequency2      800		800		800
+
+Voltage2        796989		795860		788828
+
+Current2        670		625		584259
+
+ActivePower2    0		0		3686
+
+ApparentPower2  4		3		3720
+
+ENLOGIC>
+--Power Meter Value:
+Frequence:50.00000
+Voltage:220.47000
+Current:16.72000
+Active Power:3686.25840
+Apparent Power:3686.25840
+compensation(R):0.00000
+----Fitting accu curve,Load:5A,PF=1.0
+--
+Frequence:49.999000
+Voltage:220.180000
+Current:5.000000
+Active Power:0.000000
+Apparent Power:0.000000
+
+----Load Set Sucessfully.
+--负载加载成功
+----Send: get powerreg
+[Send]:ft get powerreg
+[Receive]:00
+
+Get PowerSupply Chip #1 Register
+
+                PHASE 1		PHASE 2		PHASE 3
+
+Frequency1      800		800		800
+
+Voltage1        797819		797776		793434
+
+Current1        595		600		175083
+
+ActivePower1    0		0		1114
+
+ApparentPower1  3		3		1123
+
+Get PowerSupply Chip #2 Register
+
+                PHASE 1		PHASE 2		PHASE 3
+
+Frequency2      800		800		800
+
+Voltage2        795989		793571		793314
+
+Current2        640		654		174574
+
+ActivePower2    0		0		1106
+
+ApparentPower2  4		3		1116
+
+ENLOGIC>
+----Receive: ft get powerreg
+
+E000
+
+Get PowerSupply Chip #1 Register
+
+                PHASE 1		PHASE 2		PHASE 3
+
+Frequency1      800		800		800
+
+Voltage1        797819		797776		793434
+
+Current1        595		600		175083
+
+ActivePower1    0		0		1114
+
+ApparentPower1  3		3		1123
+
+Get PowerSupply Chip #2 Register
+
+                PHASE 1		PHASE 2		PHASE 3
+
+Frequency2      800		800		800
+
+Voltage2        795989		793571		793314
+
+Current2        640		654		174574
+
+ActivePower2    0		0		1106
+
+ApparentPower2  4		3		1116
+
+ENLOGIC>
+--Power Meter Value:
+Frequence:49.99900
+Voltage:220.44000
+Current:5.00000
+Active Power:1102.20000
+Apparent Power:1102.20000
+compensation(R):0.00000
+----Fitting accu curve,Load:3A,PF=1.0
+--
+Frequence:49.999000
+Voltage:220.260000
+Current:3.000000
+Active Power:0.000000
+Apparent Power:0.000000
+
+----Load Set Sucessfully.
+--负载加载成功
+----Send: get powerreg
+[Send]:ft get powerreg
+[Receive]:00
+
+Get PowerSupply Chip #1 Register
+
+                PHASE 1		PHASE 2		PHASE 3
+
+Frequency1      800		800		800
+
+Voltage1        798617		796864		794133
+
+Current1        529		644		105153
+
+ActivePower1    0		0		669
+
+ApparentPower1  3		3		675
+
+Get PowerSupply Chip #2 Register
+
+                PHASE 1		PHASE 2		PHASE 3
+
+Frequency2      800		800		800
+
+Voltage2        795296		793558		793397
+
+Current2        656		581		104694
+
+ActivePower2    0		0		665
+
+ApparentPower2  4		3		671
+
+ENLOGIC>
+----Receive: ft get powerreg
+
+E000
+
+Get PowerSupply Chip #1 Register
+
+                PHASE 1		PHASE 2		PHASE 3
+
+Frequency1      800		800		800
+
+Voltage1        798617		796864		794133
+
+Current1        529		644		105153
+
+ActivePower1    0		0		669
+
+ApparentPower1  3		3		675
+
+Get PowerSupply Chip #2 Register
+
+                PHASE 1		PHASE 2		PHASE 3
+
+Frequency2      800		800		800
+
+Voltage2        795296		793558		793397
+
+Current2        656		581		104694
+
+ActivePower2    0		0		665
+
+ApparentPower2  4		3		671
+
+ENLOGIC>
+--Power Meter Value:
+Frequence:49.99900
+Voltage:220.41000
+Current:3.00000
+Active Power:661.23000
+Apparent Power:661.23000
+compensation(R):0.00000
+----Fitting accu curve,Load:1A,PF=1.0
+--
+Frequence:50.000000
+Voltage:220.400000
+Current:1.010000
+Active Power:0.000000
+Apparent Power:0.000000
+
+----Load Set Sucessfully.
+--负载加载成功
+----Send: get powerreg
+[Send]:ft get powerreg
+[Receive]:00
+
+Get PowerSupply Chip #1 Register
+
+                PHASE 1		PHASE 2		PHASE 3
+
+Frequency1      800		800		800
+
+Voltage1        798753		797519		795318
+
+Current1        571		638		35167
+
+ActivePower1    0		0		224
+
+ApparentPower1  3		3		226
+
+Get PowerSupply Chip #2 Register
+
+                PHASE 1		PHASE 2		PHASE 3
+
+Frequency2      800		800		800
+
+Voltage2        795463		793148		793621
+
+Current2        677		582		34910
+
+ActivePower2    0		0		222
+
+ApparentPower2  4		3		224
+
+ENLOGIC>
+----Receive: ft get powerreg
+
+E000
+
+Get PowerSupply Chip #1 Register
+
+                PHASE 1		PHASE 2		PHASE 3
+
+Frequency1      800		800		800
+
+Voltage1        798753		797519		795318
+
+Current1        571		638		35167
+
+ActivePower1    0		0		224
+
+ApparentPower1  3		3		226
+
+Get PowerSupply Chip #2 Register
+
+                PHASE 1		PHASE 2		PHASE 3
+
+Frequency2      800		800		800
+
+Voltage2        795463		793148		793621
+
+Current2        677		582		34910
+
+ActivePower2    0		0		222
+
+ApparentPower2  4		3		224
+
+ENLOGIC>
+--Power Meter Value:
+Frequence:50.00000
+Voltage:220.38000
+Current:1.01000
+Active Power:222.58380
+Apparent Power:222.58380
+compensation(R):0.00000
+--ab value does not plus parameter
+----Accuracy fitting Pass1time.
+----Send: cali sample freq 1 3 0.0625 0
+----Receive: ft cali sample freq 1 3 0.0625 0
+
+E000
+
+Get PowerSupply Chip #1 Phase #3 Frequency Calibration Parameter
+
+Y = 0.062500 * X + 0.000000
+
+ENLOGIC>
+----Send: cali sample vol 1 3 0.000278 0
+----Receive: ft cali sample vol 1 3 0.000278 0
+
+E000
+
+Get PowerSupply Chip #1 Phase #3 Voltage Calibration Parameter
+
+Y = 0.000278 * X + 0.000000
+
+ENLOGIC>
+----Send: cali sample cur 1 3 0.00002843 0.01005244 140118 0.00002855 0.00113825
+----Receive: ft cali sample cur 1 3 0.00002843 0.01005244 140118 0.00002855 0.00113825
+
+E000
+
+Get PowerSupply Chip #1 Phase #3 Current Calibration Parameter
+
+Y1 = 0.00002843 * X1 + 0.01005244
+
+current register point value : 140118
+
+Y2 = 0.00002855 * X2 + 0.00113825
+
+ENLOGIC>
+----Send: cali sample act 1 3 0.985722 1.782117 892 0.995017 -6.248617
+----Receive: ft cali sample act 1 3 0.985722 1.782117 892 0.995017 -6.248617
+
+E000
+
+Get PowerSupply Chip #1 Phase #3 Activepower Calibration Parameter
+
+Y1 = 0.985722 * X1 + 1.782117
+
+activerpower register point value : 892
+
+Y2 = 0.995017 * X2 + -6.248617
+
+ENLOGIC>
+----Send: cali sample app 1 3 0.976940 1.795290 899 0.986282 -5.394497
+----Receive: ft cali sample app 1 3 0.976940 1.795290 899 0.986282 -5.394497
+
+E000
+
+Get PowerSupply Chip #1 Phase #3 Apparentpower Calibration Parameter
+
+Y1 = 0.976940 * X1 + 1.795290
+
+apparentpower register point value : 899
+
+Y2 = 0.986282 * X2 + -5.394497
+
+ENLOGIC>
+--精度验证，加载：2A, PF=1.00
+----Set the load to 2.0 PF=1.0
+--
+Frequence:50.000000
+Voltage:220.450000
+Current:2.010000
+Active Power:0.000000
+Apparent Power:0.000000
+
+----Load Set Sucessfully.
+--负载加载成功
+----Waiting 2s
+----Power Meter Value:
+Frequence:49.999000
+Voltage:220.310000
+Current:2.000000
+Active Power:440.620000
+Apparent Power:440.620000
+--Power Meter Value(add R):
+Frequence:49.999000
+Voltage:220.310000
+Current:2.000000
+Active Power:440.620000
+Apparent Power:440.620000
+compensation(R):0.000000
+----Send: get power 1 3
+[Send]:ft get power 1 3
+[Receive]:00
+
+Get powersupply Chip #1 Phase #3 Feature
+
+frequency     : 50.0Hz
+
+voltage       : 221.3V
+
+current       : 2.006A
+
+activepower   : 441.4W
+
+reactivepower : 21.0W
+
+apparentpower : 441.9W
+
+powerfactor   : 0.00 
+
+ENLOGIC>
+--ft get power 1 3
+
+E000
+
+Get powersupply Chip #1 Phase #3 Feature
+
+frequency     : 50.0Hz
+
+voltage       : 221.3V
+
+current       : 2.006A
+
+activepower   : 441.4W
+
+reactivepower : 21.0W
+
+apparentpower : 441.9W
+
+powerfactor   : 0.00 
+
+ENLOGIC>
+--++Phase 3 ++精度验证：成功:2.0A,PF=1.0,offset 0.000020,0.004402,0.003000,0.001679,0.002814,
+----Set the load to 12.0 PF=1.0
+--精度验证，加载：12A, PF=1.00
+--
+Frequence:49.999000
+Voltage:220.490000
+Current:11.990000
+Active Power:0.000000
+Apparent Power:0.000000
+
+----Load Set Sucessfully.
+--负载加载成功
+----Waiting 2s
+----Power Meter Value:
+Frequence:49.999000
+Voltage:219.930000
+Current:12.000000
+Active Power:2639.160000
+Apparent Power:2639.160000
+--Power Meter Value(add R):
+Frequence:49.999000
+Voltage:219.930000
+Current:12.000000
+Active Power:2639.160000
+Apparent Power:2639.160000
+compensation(R):0.000000
+----Send: get power 1 3
+[Send]:ft get power 1 3
+[Receive]:00
+
+Get powersupply Chip #1 Phase #3 Feature
+
+frequency     : 50.0Hz
+
+voltage       : 220.0V
+
+current       : 11.997A
+
+activepower   : 2643.5W
+
+reactivepower : 81.8W
+
+apparentpower : 2644.7W
+
+powerfactor   : 0.00 
+
+ENLOGIC>
+--ft get power 1 3
+
+E000
+
+Get powersupply Chip #1 Phase #3 Feature
+
+frequency     : 50.0Hz
+
+voltage       : 220.0V
+
+current       : 11.997A
+
+activepower   : 2643.5W
+
+reactivepower : 81.8W
+
+apparentpower : 2644.7W
+
+powerfactor   : 0.00 
+
+ENLOGIC>
+--++Phase 3 ++精度验证：成功:12.0A,PF=1.0,offset 0.000020,0.000091,0.000250,0.001417,0.001871,
+----Set the load to 20.0 PF=1.0
+--精度验证，加载：20A, PF=1.00
+--等待10s使电阻值稳定
+--Current:16.79
+--Current:16.74
+--负载加载成功
+----Waiting 2s
+----Power Meter Value:
+Frequence:49.999000
+Voltage:219.860000
+Current:16.730000
+Active Power:3678.257800
+Apparent Power:3678.257800
+--Power Meter Value(add R):
+Frequence:49.999000
+Voltage:219.860000
+Current:16.730000
+Active Power:3678.257800
+Apparent Power:3678.257800
+compensation(R):0.000000
+----Send: get power 1 3
+[Send]:ft get power 1 3
+[Receive]:00
+
+Get powersupply Chip #1 Phase #3 Feature
+
+frequency     : 50.0Hz
+
+voltage       : 220.2V
+
+current       : 16.731A
+
+activepower   : 3685.3W
+
+reactivepower : 7.7W
+
+apparentpower : 3685.3W
+
+powerfactor   : 0.00 
+
+ENLOGIC>
+--ft get power 1 3
+
+E000
+
+Get powersupply Chip #1 Phase #3 Feature
+
+frequency     : 50.0Hz
+
+voltage       : 220.2V
+
+current       : 16.731A
+
+activepower   : 3685.3W
+
+reactivepower : 7.7W
+
+apparentpower : 3685.3W
+
+powerfactor   : 0.00 
+
+ENLOGIC>
+--++Phase 3 ++精度验证：成功:20.0A,PF=1.0,offset 0.000020,0.001638,0.000658,0.002605,0.002605,
+----Set the load to 20.0 PF=1.0
+--精度验证，加载：20A, PF=1.00
+--等待10s使电阻值稳定
+--Current:16.74
+--负载加载成功
+----Waiting 2s
+----Power Meter Value:
+Frequence:49.999000
+Voltage:219.820000
+Current:16.730000
+Active Power:3677.588600
+Apparent Power:3677.588600
+--Power Meter Value(add R):
+Frequence:49.999000
+Voltage:219.820000
+Current:16.730000
+Active Power:3677.588600
+Apparent Power:3677.588600
+compensation(R):0.000000
+----Send: get power 1 3
+[Send]:ft get power 1 3
+[Receive]:00
+
+Get powersupply Chip #1 Phase #3 Feature
+
+frequency     : 50.0Hz
+
+voltage       : 219.9V
+
+current       : 16.731A
+
+activepower   : 3682.3W
+
+reactivepower : 15.8W
+
+apparentpower : 3682.3W
+
+powerfactor   : 0.00 
+
+ENLOGIC>
+--ft get power 1 3
+
+E000
+
+Get powersupply Chip #1 Phase #3 Feature
+
+frequency     : 50.0Hz
+
+voltage       : 219.9V
+
+current       : 16.731A
+
+activepower   : 3682.3W
+
+reactivepower : 15.8W
+
+apparentpower : 3682.3W
+
+powerfactor   : 0.00 
+
+ENLOGIC>
+--++Phase 3 ++精度验证：成功:20.0A,PF=1.0,offset 0.000020,0.000091,0.000658,0.001607,0.001607,
+----Phase 3 finished accuracy calibrate and verify
+--切换CT至L1
+----Open Phase 1
+--Accuracy fitting: 1 time.
+----Fitting accu curve,Load:20A,PF=1.0
+--等待10s使电阻值稳定
+--Current:16.76
+--Current:16.71
+--负载加载成功
+----Send: get powerreg
+[Send]:ft get powerreg
+[Receive]:00
+
+Get PowerSupply Chip #1 Register
+
+                PHASE 1		PHASE 2		PHASE 3
+
+Frequency1      800		800		800
+
+Voltage1        791752		796921		795947
+
+Current1        584099		584		607
+
+ActivePower1    3701		0		0
+
+ApparentPower1  3733		3		4
+
+Get PowerSupply Chip #2 Register
+
+                PHASE 1		PHASE 2		PHASE 3
+
+Frequency2      800		800		800
+
+Voltage2        787595		795606		795949
+
+Current2        583968		581		699
+
+ActivePower2    3688		0		0
+
+ApparentPower2  3720		3		4
+
+ENLOGIC>
+----Receive: ft get powerreg
+
+E000
+
+Get PowerSupply Chip #1 Register
+
+                PHASE 1		PHASE 2		PHASE 3
+
+Frequency1      800		800		800
+
+Voltage1        791752		796921		795947
+
+Current1        584099		584		607
+
+ActivePower1    3701		0		0
+
+ApparentPower1  3733		3		4
+
+Get PowerSupply Chip #2 Register
+
+                PHASE 1		PHASE 2		PHASE 3
+
+Frequency2      800		800		800
+
+Voltage2        787595		795606		795949
+
+Current2        583968		581		699
+
+ActivePower2    3688		0		0
+
+ApparentPower2  3720		3		4
+
+ENLOGIC>
+--Power Meter Value:
+Frequence:49.99900
+Voltage:220.45000
+Current:16.71000
+Active Power:3683.71950
+Apparent Power:3683.71950
+compensation(R):0.00000
+----Fitting accu curve,Load:5A,PF=1.0
+----Load Set Sucessfully.
+--
+Frequence:49.999000
+Voltage:220.040000
+Current:5.020000
+Active Power:0.000000
+Apparent Power:0.000000
+
+----Send: get powerreg
+[Send]:ft get powerreg
+[Receive]:00
+
+Get PowerSupply Chip #1 Register
+
+                PHASE 1		PHASE 2		PHASE 3
+
+Frequency1      800		800		800
+
+Voltage1        796159		796002		795469
+
+Current1        175085		601		599
+
+ActivePower1    1111		0		0
+
+ApparentPower1  1122		3		4
+
+Get PowerSupply Chip #2 Register
+
+                PHASE 1		PHASE 2		PHASE 3
+
+Frequency2      800		800		800
+
+Voltage2        792354		795363		795323
+
+Current2        175058		612		682
+
+ActivePower2    1109		0		0
+
+ApparentPower2  1119		3		4
+
+ENLOGIC>
+----Receive: ft get powerreg
+
+E000
+
+Get PowerSupply Chip #1 Register
+
+                PHASE 1		PHASE 2		PHASE 3
+
+Frequency1      800		800		800
+
+Voltage1        796159		796002		795469
+
+Current1        175085		601		599
+
+ActivePower1    1111		0		0
+
+ApparentPower1  1122		3		4
+
+Get PowerSupply Chip #2 Register
+
+                PHASE 1		PHASE 2		PHASE 3
+
+Frequency2      800		800		800
+
+Voltage2        792354		795363		795323
+
+Current2        175058		612		682
+
+ActivePower2    1109		0		0
+
+ApparentPower2  1119		3		4
+
+ENLOGIC>
+--Power Meter Value:
+Frequence:50.00000
+Voltage:220.37000
+Current:5.02000
+Active Power:1106.25740
+Apparent Power:1106.25740
+compensation(R):0.00000
+----Fitting accu curve,Load:3A,PF=1.0
+--
+Frequence:49.999000
+Voltage:220.210000
+Current:3.010000
+Active Power:0.000000
+Apparent Power:0.000000
+
+----Load Set Sucessfully.
+--负载加载成功
+----Send: get powerreg
+[Send]:ft get powerreg
+[Receive]:00
+
+Get PowerSupply Chip #1 Register
+
+                PHASE 1		PHASE 2		PHASE 3
+
+Frequency1      800		800		800
+
+Voltage1        795803		796339		796033
+
+Current1        104881		641		615
+
+ActivePower1    667		0		0
+
+ApparentPower1  674		3		4
+
+Get PowerSupply Chip #2 Register
+
+                PHASE 1		PHASE 2		PHASE 3
+
+Frequency2      800		800		800
+
+Voltage2        794707		795018		794998
+
+Current2        104950		602		643
+
+ActivePower2    666		0		0
+
+ApparentPower2  672		3		4
+
+ENLOGIC>
+----Receive: ft get powerreg
+
+E000
+
+Get PowerSupply Chip #1 Register
+
+                PHASE 1		PHASE 2		PHASE 3
+
+Frequency1      800		800		800
+
+Voltage1        795803		796339		796033
+
+Current1        104881		641		615
+
+ActivePower1    667		0		0
+
+ApparentPower1  674		3		4
+
+Get PowerSupply Chip #2 Register
+
+                PHASE 1		PHASE 2		PHASE 3
+
+Frequency2      800		800		800
+
+Voltage2        794707		795018		794998
+
+Current2        104950		602		643
+
+ActivePower2    666		0		0
+
+ApparentPower2  672		3		4
+
+ENLOGIC>
+--Power Meter Value:
+Frequence:49.99900
+Voltage:220.34000
+Current:3.01000
+Active Power:663.22340
+Apparent Power:663.22340
+compensation(R):0.00000
+----Fitting accu curve,Load:1A,PF=1.0
+--
+Frequence:49.998000
+Voltage:220.380000
+Current:1.020000
+Active Power:0.000000
+Apparent Power:0.000000
+
+----Load Set Sucessfully.
+--负载加载成功
+----Send: get powerreg
+[Send]:ft get powerreg
+[Receive]:00
+
+Get PowerSupply Chip #1 Register
+
+                PHASE 1		PHASE 2		PHASE 3
+
+Frequency1      800		800		800
+
+Voltage1        796717		796678		796777
+
+Current1        35098		606		659
+
+ActivePower1    222		0		0
+
+ApparentPower1  226		3		4
+
+Get PowerSupply Chip #2 Register
+
+                PHASE 1		PHASE 2		PHASE 3
+
+Frequency2      800		800		800
+
+Voltage2        796120		794407		793989
+
+Current2        35076		618		666
+
+ActivePower2    223		0		0
+
+ApparentPower2  225		3		4
+
+ENLOGIC>
+----Receive: ft get powerreg
+
+E000
+
+Get PowerSupply Chip #1 Register
+
+                PHASE 1		PHASE 2		PHASE 3
+
+Frequency1      800		800		800
+
+Voltage1        796717		796678		796777
+
+Current1        35098		606		659
+
+ActivePower1    222		0		0
+
+ApparentPower1  226		3		4
+
+Get PowerSupply Chip #2 Register
+
+                PHASE 1		PHASE 2		PHASE 3
+
+Frequency2      800		800		800
+
+Voltage2        796120		794407		793989
+
+Current2        35076		618		666
+
+ActivePower2    223		0		0
+
+ApparentPower2  225		3		4
+
+ENLOGIC>
+--Power Meter Value:
+Frequence:49.99900
+Voltage:220.31000
+Current:1.02000
+Active Power:224.71620
+Apparent Power:224.71620
+compensation(R):0.00000
+--ab value does not plus parameter
+----Accuracy fitting Pass1time.
+----Send: cali sample freq 2 1 0.0625 0
+----Receive: ft cali sample freq 2 1 0.0625 0
+
+E000
+
+Get PowerSupply Chip #2 Phase #1 Frequency Calibration Parameter
+
+Y = 0.062500 * X + 0.000000
+
+ENLOGIC>
+----Send: cali sample vol 2 1 0.000278 0
+----Receive: ft cali sample vol 2 1 0.000278 0
+
+E000
+
+Get PowerSupply Chip #2 Phase #1 Voltage Calibration Parameter
+
+Y = 0.000278 * X + 0.000000
+
+ENLOGIC>
+----Send: cali sample cur 2 1 0.00002848 0.02104130 140004 0.00002859 0.01540725
+----Receive: ft cali sample cur 2 1 0.00002848 0.02104130 140004 0.00002859 0.01540725
+
+E000
+
+Get PowerSupply Chip #2 Phase #1 Current Calibration Parameter
+
+Y1 = 0.00002848 * X1 + 0.02104130
+
+current register point value : 140004
+
+Y2 = 0.00002859 * X2 + 0.01540725
+
+ENLOGIC>
+----Send: cali sample act 2 1 0.989858 3.977813 888 0.999404 -2.081285
+----Receive: ft cali sample act 2 1 0.989858 3.977813 888 0.999404 -2.081285
+
+E000
+
+Get PowerSupply Chip #2 Phase #1 Activepower Calibration Parameter
+
+Y1 = 0.989858 * X1 + 3.977813
+
+activerpower register point value : 888
+
+Y2 = 0.999404 * X2 + -2.081285
+
+ENLOGIC>
+----Send: cali sample app 2 1 0.981000 3.991099 896 0.990950 -2.616145
+----Receive: ft cali sample app 2 1 0.981000 3.991099 896 0.990950 -2.616145
+
+E000
+
+Get PowerSupply Chip #2 Phase #1 Apparentpower Calibration Parameter
+
+Y1 = 0.981000 * X1 + 3.991099
+
+apparentpower register point value : 896
+
+Y2 = 0.990950 * X2 + -2.616145
+
+ENLOGIC>
+--精度验证，加载：2A, PF=1.00
+----Set the load to 2.0 PF=1.0
+--
+Frequence:49.999000
+Voltage:220.270000
+Current:2.020000
+Active Power:0.000000
+Apparent Power:0.000000
+
+----Load Set Sucessfully.
+--负载加载成功
+----Waiting 2s
+----Power Meter Value:
+Frequence:49.999000
+Voltage:220.300000
+Current:2.020000
+Active Power:445.006000
+Apparent Power:445.006000
+--Power Meter Value(add R):
+Frequence:49.999000
+Voltage:220.300000
+Current:2.020000
+Active Power:445.006000
+Apparent Power:445.006000
+compensation(R):0.000000
+----Send: get power 2 1
+[Send]:ft get power 2 1
+[Receive]:00
+
+Get powersupply Chip #2 Phase #1 Feature
+
+frequency     : 50.0Hz
+
+voltage       : 221.2V
+
+current       : 2.016A
+
+activepower   : 442.5W
+
+reactivepower : 29.7W
+
+apparentpower : 443.5W
+
+powerfactor   : 0.00 
+
+ENLOGIC>
+--ft get power 2 1
+
+E000
+
+Get powersupply Chip #2 Phase #1 Feature
+
+frequency     : 50.0Hz
+
+voltage       : 221.2V
+
+current       : 2.016A
+
+activepower   : 442.5W
+
+reactivepower : 29.7W
+
+apparentpower : 443.5W
+
+powerfactor   : 0.00 
+
+ENLOGIC>
+--++Phase 1 ++精度验证：成功:2.0A,PF=1.0,offset 0.000020,0.004040,0.001980,0.005677,0.003429,
+----Set the load to 12.0 PF=1.0
+--精度验证，加载：12A, PF=1.00
+--
+Frequence:49.999000
+Voltage:219.610000
+Current:12.010000
+Active Power:0.000000
+Apparent Power:0.000000
+
+----Load Set Sucessfully.
+--负载加载成功
+----Waiting 2s
+----Power Meter Value:
+Frequence:49.999000
+Voltage:219.590000
+Current:12.010000
+Active Power:2637.275900
+Apparent Power:2637.275900
+--Power Meter Value(add R):
+Frequence:49.999000
+Voltage:219.590000
+Current:12.010000
+Active Power:2637.275900
+Apparent Power:2637.275900
+compensation(R):0.000000
+----Send: get power 2 1
+[Send]:ft get power 2 1
+[Receive]:00
+
+Get powersupply Chip #2 Phase #1 Feature
+
+frequency     : 50.0Hz
+
+voltage       : 219.8V
+
+current       : 12.014A
+
+activepower   : 2644.3W
+
+reactivepower : 67.5W
+
+apparentpower : 2645.2W
+
+powerfactor   : 0.00 
+
+ENLOGIC>
+--ft get power 2 1
+
+E000
+
+Get powersupply Chip #2 Phase #1 Feature
+
+frequency     : 50.0Hz
+
+voltage       : 219.8V
+
+current       : 12.014A
+
+activepower   : 2644.3W
+
+reactivepower : 67.5W
+
+apparentpower : 2645.2W
+
+powerfactor   : 0.00 
+
+ENLOGIC>
+--++Phase 1 ++精度验证：成功:12.0A,PF=1.0,offset 0.000000,0.000865,0.000333,0.002572,0.002913,
+----Set the load to 20.0 PF=1.0
+--精度验证，加载：20A, PF=1.00
+--等待10s使电阻值稳定
+--Current:16.78
+--Current:16.72
+--负载加载成功
+----Waiting 2s
+----Power Meter Value:
+Frequence:49.999000
+Voltage:219.450000
+Current:16.720000
+Active Power:3669.204000
+Apparent Power:3669.204000
+--Power Meter Value(add R):
+Frequence:49.999000
+Voltage:219.450000
+Current:16.720000
+Active Power:3669.204000
+Apparent Power:3669.204000
+compensation(R):0.000000
+----Send: get power 2 1
+[Send]:ft get power 2 1
+[Receive]:00
+
+Get powersupply Chip #2 Phase #1 Feature
+
+frequency     : 50.0Hz
+
+voltage       : 219.5V
+
+current       : 16.729A
+
+activepower   : 3681.7W
+
+reactivepower : 86.0W
+
+apparentpower : 3682.7W
+
+powerfactor   : 0.00 
+
+ENLOGIC>
+--ft get power 2 1
+
+E000
+
+Get powersupply Chip #2 Phase #1 Feature
+
+frequency     : 50.0Hz
+
+voltage       : 219.5V
+
+current       : 16.729A
+
+activepower   : 3681.7W
+
+reactivepower : 86.0W
+
+apparentpower : 3682.7W
+
+powerfactor   : 0.00 
+
+ENLOGIC>
+--++Phase 1 ++精度验证：成功:20.0A,PF=1.0,offset 0.000020,0.000228,0.001137,0.004006,0.004279,
+----Set the load to 20.0 PF=1.0
+--精度验证，加载：20A, PF=1.00
+--等待10s使电阻值稳定
+--Current:16.73
+--负载加载成功
+----Waiting 2s
+----Power Meter Value:
+Frequence:49.999000
+Voltage:219.320000
+Current:16.710000
+Active Power:3664.837200
+Apparent Power:3664.837200
+--Power Meter Value(add R):
+Frequence:49.999000
+Voltage:219.320000
+Current:16.710000
+Active Power:3664.837200
+Apparent Power:3664.837200
+compensation(R):0.000000
+----Send: get power 2 1
+[Send]:ft get power 2 1
+[Receive]:00
+
+Get powersupply Chip #2 Phase #1 Feature
+
+frequency     : 50.0Hz
+
+voltage       : 219.4V
+
+current       : 16.726A
+
+activepower   : 3681.7W
+
+reactivepower : 86.0W
+
+apparentpower : 3682.7W
+
+powerfactor   : 0.00 
+
+ENLOGIC>
+--ft get power 2 1
+
+E000
+
+Get powersupply Chip #2 Phase #1 Feature
+
+frequency     : 50.0Hz
+
+voltage       : 219.4V
+
+current       : 16.726A
+
+activepower   : 3681.7W
+
+reactivepower : 86.0W
+
+apparentpower : 3682.7W
+
+powerfactor   : 0.00 
+
+ENLOGIC>
+--++Phase 1 ++精度验证：成功:20.0A,PF=1.0,offset 0.000020,0.000182,0.000958,0.004418,0.004691,
+----Phase 1 finished accuracy calibrate and verify
+--切换CT至L2
+----Open Phase 2
+--Accuracy fitting: 1 time.
+----Fitting accu curve,Load:20A,PF=1.0
+--等待10s使电阻值稳定
+--Current:16.78
+--Current:16.73
+--负载加载成功
+----Send: get powerreg
+[Send]:ft get powerreg
+[Receive]:00
+
+Get PowerSupply Chip #1 Register
+
+                PHASE 1		PHASE 2		PHASE 3
+
+Frequency1      800		800		800
+
+Voltage1        798351		791374		796085
+
+Current1        561		584635		602
+
+ActivePower1    0		3709		0
+
+ApparentPower1  3		3741		4
+
+Get PowerSupply Chip #2 Register
+
+                PHASE 1		PHASE 2		PHASE 3
+
+Frequency2      800		800		800
+
+Voltage2        796799		789227		796321
+
+Current2        658		584786		686
+
+ActivePower2    0		3691		0
+
+ApparentPower2  4		3725		4
+
+ENLOGIC>
+----Receive: ft get powerreg
+
+E000
+
+Get PowerSupply Chip #1 Register
+
+                PHASE 1		PHASE 2		PHASE 3
+
+Frequency1      800		800		800
+
+Voltage1        798351		791374		796085
+
+Current1        561		584635		602
+
+ActivePower1    0		3709		0
+
+ApparentPower1  3		3741		4
+
+Get PowerSupply Chip #2 Register
+
+                PHASE 1		PHASE 2		PHASE 3
+
+Frequency2      800		800		800
+
+Voltage2        796799		789227		796321
+
+Current2        658		584786		686
+
+ActivePower2    0		3691		0
+
+ApparentPower2  4		3725		4
+
+ENLOGIC>
+--Power Meter Value:
+Frequence:49.99900
+Voltage:219.80000
+Current:16.72000
+Active Power:3675.05600
+Apparent Power:3675.05600
+compensation(R):0.00000
+----Fitting accu curve,Load:5A,PF=1.0
+--
+Frequence:50.000000
+Voltage:220.090000
+Current:5.010000
+Active Power:0.000000
+Apparent Power:0.000000
+
+----Load Set Sucessfully.
+--负载加载成功
+----Send: get powerreg
+[Send]:ft get powerreg
+[Receive]:00
+
+Get PowerSupply Chip #1 Register
+
+                PHASE 1		PHASE 2		PHASE 3
+
+Frequency1      800		800		800
+
+Voltage1        798941		795253		795351
+
+Current1        548		174851		676
+
+ActivePower1    0		1112		0
+
+ApparentPower1  3		1122		4
+
+Get PowerSupply Chip #2 Register
+
+                PHASE 1		PHASE 2		PHASE 3
+
+Frequency2      800		800		800
+
+Voltage2        795432		791426		794872
+
+Current2        663		174776		639
+
+ActivePower2    0		1107		0
+
+ApparentPower2  4		1118		4
+
+ENLOGIC>
+----Receive: ft get powerreg
+
+E000
+
+Get PowerSupply Chip #1 Register
+
+                PHASE 1		PHASE 2		PHASE 3
+
+Frequency1      800		800		800
+
+Voltage1        798941		795253		795351
+
+Current1        548		174851		676
+
+ActivePower1    0		1112		0
+
+ApparentPower1  3		1122		4
+
+Get PowerSupply Chip #2 Register
+
+                PHASE 1		PHASE 2		PHASE 3
+
+Frequency2      800		800		800
+
+Voltage2        795432		791426		794872
+
+Current2        663		174776		639
+
+ActivePower2    0		1107		0
+
+ApparentPower2  4		1118		4
+
+ENLOGIC>
+--Power Meter Value:
+Frequence:49.99900
+Voltage:220.14000
+Current:5.00000
+Active Power:1100.70000
+Apparent Power:1100.70000
+compensation(R):0.00000
+----Fitting accu curve,Load:3A,PF=1.0
+--
+Frequence:50.000000
+Voltage:220.200000
+Current:3.000000
+Active Power:0.000000
+Apparent Power:0.000000
+
+----Load Set Sucessfully.
+--负载加载成功
+----Send: get powerreg
+[Send]:ft get powerreg
+[Receive]:00
+
+Get PowerSupply Chip #1 Register
+
+                PHASE 1		PHASE 2		PHASE 3
+
+Frequency1      800		800		800
+
+Voltage1        798899		796404		796554
+
+Current1        569		104931		628
+
+ActivePower1    0		668		0
+
+ApparentPower1  3		674		4
+
+Get PowerSupply Chip #2 Register
+
+                PHASE 1		PHASE 2		PHASE 3
+
+Frequency2      800		800		800
+
+Voltage2        795630		791868		793864
+
+Current2        721		104893		655
+
+ActivePower2    0		665		0
+
+ApparentPower2  4		672		4
+
+ENLOGIC>
+----Receive: ft get powerreg
+
+E000
+
+Get PowerSupply Chip #1 Register
+
+                PHASE 1		PHASE 2		PHASE 3
+
+Frequency1      800		800		800
+
+Voltage1        798899		796404		796554
+
+Current1        569		104931		628
+
+ActivePower1    0		668		0
+
+ApparentPower1  3		674		4
+
+Get PowerSupply Chip #2 Register
+
+                PHASE 1		PHASE 2		PHASE 3
+
+Frequency2      800		800		800
+
+Voltage2        795630		791868		793864
+
+Current2        721		104893		655
+
+ActivePower2    0		665		0
+
+ApparentPower2  4		672		4
+
+ENLOGIC>
+--Power Meter Value:
+Frequence:49.99900
+Voltage:220.20000
+Current:3.00000
+Active Power:660.60000
+Apparent Power:660.60000
+compensation(R):0.00000
+----Fitting accu curve,Load:1A,PF=1.0
+--
+Frequence:50.000000
+Voltage:220.300000
+Current:1.010000
+Active Power:0.000000
+Apparent Power:0.000000
+
+----Load Set Sucessfully.
+--负载加载成功
+----Send: get powerreg
+[Send]:ft get powerreg
+[Receive]:00
+
+Get PowerSupply Chip #1 Register
+
+                PHASE 1		PHASE 2		PHASE 3
+
+Frequency1      800		800		800
+
+Voltage1        798619		797318		796530
+
+Current1        553		35134		616
+
+ActivePower1    0		224		0
+
+ApparentPower1  3		226		4
+
+Get PowerSupply Chip #2 Register
+
+                PHASE 1		PHASE 2		PHASE 3
+
+Frequency2      800		800		800
+
+Voltage2        795710		792917		793753
+
+Current2        660		35128		660
+
+ActivePower2    0		221		0
+
+ApparentPower2  4		225		4
+
+ENLOGIC>
+----Receive: ft get powerreg
+
+E000
+
+Get PowerSupply Chip #1 Register
+
+                PHASE 1		PHASE 2		PHASE 3
+
+Frequency1      800		800		800
+
+Voltage1        798619		797318		796530
+
+Current1        553		35134		616
+
+ActivePower1    0		224		0
+
+ApparentPower1  3		226		4
+
+Get PowerSupply Chip #2 Register
+
+                PHASE 1		PHASE 2		PHASE 3
+
+Frequency2      800		800		800
+
+Voltage2        795710		792917		793753
+
+Current2        660		35128		660
+
+ActivePower2    0		221		0
+
+ApparentPower2  4		225		4
+
+ENLOGIC>
+--Power Meter Value:
+Frequence:49.99900
+Voltage:220.30000
+Current:1.01000
+Active Power:222.50300
+Apparent Power:222.50300
+compensation(R):0.00000
+--ab value does not plus parameter
+----Accuracy fitting Pass1time.
+----Send: cali sample freq 2 2 0.0625 0
+----Receive: ft cali sample freq 2 2 0.0625 0
+
+E000
+
+Get PowerSupply Chip #2 Phase #2 Frequency Calibration Parameter
+
+Y = 0.062500 * X + 0.000000
+
+ENLOGIC>
+----Send: cali sample vol 2 2 0.000278 0
+----Receive: ft cali sample vol 2 2 0.000278 0
+
+E000
+
+Get PowerSupply Chip #2 Phase #2 Voltage Calibration Parameter
+
+Y = 0.000278 * X + 0.000000
+
+ENLOGIC>
+----Send: cali sample cur 2 2 0.00002852 0.00799728 139834 0.00002858 0.00408595
+----Receive: ft cali sample cur 2 2 0.00002852 0.00799728 139834 0.00002858 0.00408595
+
+E000
+
+Get PowerSupply Chip #2 Phase #2 Current Calibration Parameter
+
+Y1 = 0.00002852 * X1 + 0.00799728
+
+current register point value : 139834
+
+Y2 = 0.00002858 * X2 + 0.00408595
+
+ENLOGIC>
+----Send: cali sample act 2 2 0.986705 4.441205 886 0.996268 -2.168457
+----Receive: ft cali sample act 2 2 0.986705 4.441205 886 0.996268 -2.168457
+
+E000
+
+Get PowerSupply Chip #2 Phase #2 Activepower Calibration Parameter
+
+Y1 = 0.986705 * X1 + 4.441205
+
+activerpower register point value : 886
+
+Y2 = 0.996268 * X2 + -2.168457
+
+ENLOGIC>
+----Send: cali sample app 2 2 0.980083 1.984376 895 0.987478 -3.300770
+----Receive: ft cali sample app 2 2 0.980083 1.984376 895 0.987478 -3.300770
+
+E000
+
+Get PowerSupply Chip #2 Phase #2 Apparentpower Calibration Parameter
+
+Y1 = 0.980083 * X1 + 1.984376
+
+apparentpower register point value : 895
+
+Y2 = 0.987478 * X2 + -3.300770
+
+ENLOGIC>
+--精度验证，加载：2A, PF=1.00
+----Set the load to 2.0 PF=1.0
+--
+Frequence:49.999000
+Voltage:220.440000
+Current:2.010000
+Active Power:0.000000
+Apparent Power:0.000000
+
+----Load Set Sucessfully.
+--负载加载成功
+----Waiting 2s
+----Power Meter Value:
+Frequence:49.999000
+Voltage:220.230000
+Current:2.010000
+Active Power:442.662300
+Apparent Power:442.662300
+--Power Meter Value(add R):
+Frequence:49.999000
+Voltage:220.230000
+Current:2.010000
+Active Power:442.662300
+Apparent Power:442.662300
+compensation(R):0.000000
+----Send: get power 2 2
+[Send]:ft get power 2 2
+[Receive]:00
+
+Get powersupply Chip #2 Phase #2 Feature
+
+frequency     : 50.0Hz
+
+voltage       : 220.9V
+
+current       : 2.002A
+
+activepower   : 440.6W
+
+reactivepower : 21.0W
+
+apparentpower : 441.1W
+
+powerfactor   : 0.00 
+
+ENLOGIC>
+--ft get power 2 2
+
+E000
+
+Get powersupply Chip #2 Phase #2 Feature
+
+frequency     : 50.0Hz
+
+voltage       : 220.9V
+
+current       : 2.002A
+
+activepower   : 440.6W
+
+reactivepower : 21.0W
+
+apparentpower : 441.1W
+
+powerfactor   : 0.00 
+
+ENLOGIC>
+--++Phase 2 ++精度验证：成功:2.0A,PF=1.0,offset 0.000020,0.002951,0.003980,0.004749,0.003620,
+----Set the load to 12.0 PF=1.0
+--精度验证，加载：12A, PF=1.00
+--
+Frequence:49.999000
+Voltage:220.490000
+Current:12.000000
+Active Power:0.000000
+Apparent Power:0.000000
+
+----Load Set Sucessfully.
+--负载加载成功
+----Waiting 2s
+----Power Meter Value:
+Frequence:49.999000
+Voltage:219.930000
+Current:12.000000
+Active Power:2639.160000
+Apparent Power:2639.160000
+--Power Meter Value(add R):
+Frequence:49.999000
+Voltage:219.930000
+Current:12.000000
+Active Power:2639.160000
+Apparent Power:2639.160000
+compensation(R):0.000000
+----Send: get power 2 2
+[Send]:ft get power 2 2
+[Receive]:00
+
+Get powersupply Chip #2 Phase #2 Feature
+
+frequency     : 50.0Hz
+
+voltage       : 219.7V
+
+current       : 11.995A
+
+activepower   : 2635.0W
+
+reactivepower : 82.0W
+
+apparentpower : 2636.2W
+
+powerfactor   : 0.00 
+
+ENLOGIC>
+--ft get power 2 2
+
+E000
+
+Get powersupply Chip #2 Phase #2 Feature
+
+frequency     : 50.0Hz
+
+voltage       : 219.7V
+
+current       : 11.995A
+
+activepower   : 2635.0W
+
+reactivepower : 82.0W
+
+apparentpower : 2636.2W
+
+powerfactor   : 0.00 
+
+ENLOGIC>
+--++Phase 2 ++精度验证：成功:12.0A,PF=1.0,offset 0.000020,0.000910,0.000417,0.001440,0.000985,
+----Set the load to 20.0 PF=1.0
+--精度验证，加载：20A, PF=1.00
+--等待10s使电阻值稳定
+--Current:16.79
+--Current:16.73
+--负载加载成功
+----Waiting 2s
+----Power Meter Value:
+Frequence:49.999000
+Voltage:219.750000
+Current:16.720000
+Active Power:3674.220000
+Apparent Power:3674.220000
+--Power Meter Value(add R):
+Frequence:49.999000
+Voltage:219.750000
+Current:16.720000
+Active Power:3674.220000
+Apparent Power:3674.220000
+compensation(R):0.000000
+----Send: get power 2 2
+[Send]:ft get power 2 2
+[Receive]:00
+
+Get powersupply Chip #2 Phase #2 Feature
+
+frequency     : 50.0Hz
+
+voltage       : 219.1V
+
+current       : 16.710A
+
+activepower   : 3672.1W
+
+reactivepower : 13.6W
+
+apparentpower : 3672.1W
+
+powerfactor   : 0.00 
+
+ENLOGIC>
+--ft get power 2 2
+
+E000
+
+Get powersupply Chip #2 Phase #2 Feature
+
+frequency     : 50.0Hz
+
+voltage       : 219.1V
+
+current       : 16.710A
+
+activepower   : 3672.1W
+
+reactivepower : 13.6W
+
+apparentpower : 3672.1W
+
+powerfactor   : 0.00 
+
+ENLOGIC>
+--++Phase 2 ++精度验证：成功:20.0A,PF=1.0,offset 0.000020,0.002867,0.000598,0.000486,0.000486,
+----Set the load to 20.0 PF=1.0
+--精度验证，加载：20A, PF=1.00
+--等待10s使电阻值稳定
+--Current:16.74
+--负载加载成功
+----Waiting 2s
+----Power Meter Value:
+Frequence:49.999000
+Voltage:219.780000
+Current:16.720000
+Active Power:3674.721600
+Apparent Power:3674.721600
+--Power Meter Value(add R):
+Frequence:49.999000
+Voltage:219.780000
+Current:16.720000
+Active Power:3674.721600
+Apparent Power:3674.721600
+compensation(R):0.000000
+----Send: get power 2 2
+[Send]:ft get power 2 2
+[Receive]:00
+
+Get powersupply Chip #2 Phase #2 Feature
+
+frequency     : 50.0Hz
+
+voltage       : 219.6V
+
+current       : 16.718A
+
+activepower   : 3671.1W
+
+reactivepower : 86.6W
+
+apparentpower : 3672.1W
+
+powerfactor   : 0.00 
+
+ENLOGIC>
+--ft get power 2 2
+
+E000
+
+Get powersupply Chip #2 Phase #2 Feature
+
+frequency     : 50.0Hz
+
+voltage       : 219.6V
+
+current       : 16.718A
+
+activepower   : 3671.1W
+
+reactivepower : 86.6W
+
+apparentpower : 3672.1W
+
+powerfactor   : 0.00 
+
+ENLOGIC>
+--++Phase 2 ++精度验证：成功:20.0A,PF=1.0,offset 0.000000,0.000819,0.000120,0.000986,0.000713,
+----Phase 2 finished accuracy calibrate and verify
+--切换CT至L3
+----Open Phase 3
+--Accuracy fitting: 1 time.
+----Fitting accu curve,Load:20A,PF=1.0
+--等待10s使电阻值稳定
+--Current:16.79
+--Current:16.73
+--负载加载成功
+----Send: get powerreg
+[Send]:ft get powerreg
+[Receive]:00
+
+Get PowerSupply Chip #1 Register
+
+                PHASE 1		PHASE 2		PHASE 3
+
+Frequency1      800		800		800
+
+Voltage1        799756		797738		790866
+
+Current1        588		589		586000
+
+ActivePower1    0		0		3713
+
+ApparentPower1  3		3		3745
+
+Get PowerSupply Chip #2 Register
+
+                PHASE 1		PHASE 2		PHASE 3
+
+Frequency2      800		800		800
+
+Voltage2        796401		794043		788735
+
+Current2        639		627		584076
+
+ActivePower2    0		0		3689
+
+ApparentPower2  4		3		3724
+
+ENLOGIC>
+----Receive: ft get powerreg
+
+E000
+
+Get PowerSupply Chip #1 Register
+
+                PHASE 1		PHASE 2		PHASE 3
+
+Frequency1      800		800		800
+
+Voltage1        799756		797738		790866
+
+Current1        588		589		586000
+
+ActivePower1    0		0		3713
+
+ApparentPower1  3		3		3745
+
+Get PowerSupply Chip #2 Register
+
+                PHASE 1		PHASE 2		PHASE 3
+
+Frequency2      800		800		800
+
+Voltage2        796401		794043		788735
+
+Current2        639		627		584076
+
+ActivePower2    0		0		3689
+
+ApparentPower2  4		3		3724
+
+ENLOGIC>
+--Power Meter Value:
+Frequence:49.99900
+Voltage:220.41000
+Current:16.72000
+Active Power:3685.25520
+Apparent Power:3685.25520
+compensation(R):0.00000
+----Fitting accu curve,Load:5A,PF=1.0
+--
+Frequence:49.999000
+Voltage:220.130000
+Current:5.010000
+Active Power:0.000000
+Apparent Power:0.000000
+
+----Load Set Sucessfully.
+--负载加载成功
+----Send: get powerreg
+[Send]:ft get powerreg
+[Receive]:00
+
+Get PowerSupply Chip #1 Register
+
+                PHASE 1		PHASE 2		PHASE 3
+
+Frequency1      800		800		800
+
+Voltage1        798980		797424		793602
+
+Current1        549		622		175495
+
+ActivePower1    0		0		1115
+
+ApparentPower1  3		3		1124
+
+Get PowerSupply Chip #2 Register
+
+                PHASE 1		PHASE 2		PHASE 3
+
+Frequency2      800		800		800
+
+Voltage2        795858		793270		792105
+
+Current2        665		585		174769
+
+ActivePower2    0		0		1107
+
+ApparentPower2  4		3		1118
+
+ENLOGIC>
+----Receive: ft get powerreg
+
+E000
+
+Get PowerSupply Chip #1 Register
+
+                PHASE 1		PHASE 2		PHASE 3
+
+Frequency1      800		800		800
+
+Voltage1        798980		797424		793602
+
+Current1        549		622		175495
+
+ActivePower1    0		0		1115
+
+ApparentPower1  3		3		1124
+
+Get PowerSupply Chip #2 Register
+
+                PHASE 1		PHASE 2		PHASE 3
+
+Frequency2      800		800		800
+
+Voltage2        795858		793270		792105
+
+Current2        665		585		174769
+
+ActivePower2    0		0		1107
+
+ApparentPower2  4		3		1118
+
+ENLOGIC>
+--Power Meter Value:
+Frequence:49.99900
+Voltage:220.40000
+Current:5.01000
+Active Power:1104.20400
+Apparent Power:1104.20400
+compensation(R):0.00000
+----Fitting accu curve,Load:3A,PF=1.0
+--
+Frequence:49.999000
+Voltage:220.240000
+Current:3.000000
+Active Power:0.000000
+Apparent Power:0.000000
+
+----Load Set Sucessfully.
+--负载加载成功
+----Send: get powerreg
+[Send]:ft get powerreg
+[Receive]:00
+
+Get PowerSupply Chip #1 Register
+
+                PHASE 1		PHASE 2		PHASE 3
+
+Frequency1      800		800		800
+
+Voltage1        798735		796348		793798
+
+Current1        556		598		105105
+
+ActivePower1    0		0		669
+
+ApparentPower1  3		3		675
+
+Get PowerSupply Chip #2 Register
+
+                PHASE 1		PHASE 2		PHASE 3
+
+Frequency2      800		800		800
+
+Voltage2        795358		793810		793787
+
+Current2        688		613		104693
+
+ActivePower2    0		0		664
+
+ApparentPower2  4		3		670
+
+ENLOGIC>
+----Receive: ft get powerreg
+
+E000
+
+Get PowerSupply Chip #1 Register
+
+                PHASE 1		PHASE 2		PHASE 3
+
+Frequency1      800		800		800
+
+Voltage1        798735		796348		793798
+
+Current1        556		598		105105
+
+ActivePower1    0		0		669
+
+ApparentPower1  3		3		675
+
+Get PowerSupply Chip #2 Register
+
+                PHASE 1		PHASE 2		PHASE 3
+
+Frequency2      800		800		800
+
+Voltage2        795358		793810		793787
+
+Current2        688		613		104693
+
+ActivePower2    0		0		664
+
+ApparentPower2  4		3		670
+
+ENLOGIC>
+--Power Meter Value:
+Frequence:49.99900
+Voltage:220.37000
+Current:3.00000
+Active Power:661.11000
+Apparent Power:661.11000
+compensation(R):0.00000
+----Fitting accu curve,Load:1A,PF=1.0
+--
+Frequence:49.999000
+Voltage:220.310000
+Current:1.010000
+Active Power:0.000000
+Apparent Power:0.000000
+
+----Load Set Sucessfully.
+--负载加载成功
+----Send: get powerreg
+[Send]:ft get powerreg
+[Receive]:00
+
+Get PowerSupply Chip #1 Register
+
+                PHASE 1		PHASE 2		PHASE 3
+
+Frequency1      800		800		800
+
+Voltage1        798236		795978		794554
+
+Current1        566		594		35165
+
+ActivePower1    0		0		224
+
+ApparentPower1  3		3		226
+
+Get PowerSupply Chip #2 Register
+
+                PHASE 1		PHASE 2		PHASE 3
+
+Frequency2      800		800		800
+
+Voltage2        795363		794103		794627
+
+Current2        643		602		34962
+
+ActivePower2    0		0		222
+
+ApparentPower2  4		3		224
+
+ENLOGIC>
+----Receive: ft get powerreg
+
+E000
+
+Get PowerSupply Chip #1 Register
+
+                PHASE 1		PHASE 2		PHASE 3
+
+Frequency1      800		800		800
+
+Voltage1        798236		795978		794554
+
+Current1        566		594		35165
+
+ActivePower1    0		0		224
+
+ApparentPower1  3		3		226
+
+Get PowerSupply Chip #2 Register
+
+                PHASE 1		PHASE 2		PHASE 3
+
+Frequency2      800		800		800
+
+Voltage2        795363		794103		794627
+
+Current2        643		602		34962
+
+ActivePower2    0		0		222
+
+ApparentPower2  4		3		224
+
+ENLOGIC>
+--Power Meter Value:
+Frequence:49.99900
+Voltage:220.33000
+Current:1.01000
+Active Power:222.53330
+Apparent Power:222.53330
+compensation(R):0.00000
+--ab value does not plus parameter
+----Accuracy fitting Pass1time.
+----Send: cali sample freq 2 3 0.0625 0
+----Receive: ft cali sample freq 2 3 0.0625 0
+
+E000
+
+Get PowerSupply Chip #2 Phase #3 Frequency Calibration Parameter
+
+Y = 0.062500 * X + 0.000000
+
+ENLOGIC>
+----Send: cali sample vol 2 3 0.000278 0
+----Receive: ft cali sample vol 2 3 0.000278 0
+
+E000
+
+Get PowerSupply Chip #2 Phase #3 Voltage Calibration Parameter
+
+Y = 0.000278 * X + 0.000000
+
+ENLOGIC>
+----Send: cali sample cur 2 3 0.00002854 0.01224606 139731 0.00002861 0.00997559
+----Receive: ft cali sample cur 2 3 0.00002854 0.01224606 139731 0.00002861 0.00997559
+
+E000
+
+Get PowerSupply Chip #2 Phase #3 Current Calibration Parameter
+
+Y1 = 0.00002854 * X1 + 0.01224606
+
+current register point value : 139731
+
+Y2 = 0.00002861 * X2 + 0.00997559
+
+ENLOGIC>
+----Send: cali sample act 2 3 0.992255 2.252695 886 0.999633 -2.389214
+----Receive: ft cali sample act 2 3 0.992255 2.252695 886 0.999633 -2.389214
+
+E000
+
+Get PowerSupply Chip #2 Phase #3 Activepower Calibration Parameter
+
+Y1 = 0.992255 * X1 + 2.252695
+
+activerpower register point value : 886
+
+Y2 = 0.999633 * X2 + -2.389214
+
+ENLOGIC>
+----Send: cali sample app 2 3 0.983356 2.261594 894 0.990426 -3.092716
+----Receive: ft cali sample app 2 3 0.983356 2.261594 894 0.990426 -3.092716
+
+E000
+
+Get PowerSupply Chip #2 Phase #3 Apparentpower Calibration Parameter
+
+Y1 = 0.983356 * X1 + 2.261594
+
+apparentpower register point value : 894
+
+Y2 = 0.990426 * X2 + -3.092716
+
+ENLOGIC>
+----Set the load to 2.0 PF=1.0
+--精度验证，加载：2A, PF=1.00
+--
+Frequence:50.000000
+Voltage:220.440000
+Current:2.010000
+Active Power:0.000000
+Apparent Power:0.000000
+
+----Load Set Sucessfully.
+--负载加载成功
+----Waiting 2s
+----Power Meter Value:
+Frequence:49.999000
+Voltage:220.300000
+Current:2.010000
+Active Power:442.803000
+Apparent Power:442.803000
+--Power Meter Value(add R):
+Frequence:49.999000
+Voltage:220.300000
+Current:2.010000
+Active Power:442.803000
+Apparent Power:442.803000
+compensation(R):0.000000
+----Send: get power 2 3
+[Send]:ft get power 2 3
+[Receive]:00
+
+Get powersupply Chip #2 Phase #3 Feature
+
+frequency     : 50.0Hz
+
+voltage       : 220.8V
+
+current       : 2.005A
+
+activepower   : 440.8W
+
+reactivepower : 2.8W
+
+apparentpower : 440.8W
+
+powerfactor   : 0.00 
+
+ENLOGIC>
+--ft get power 2 3
+
+E000
+
+Get powersupply Chip #2 Phase #3 Feature
+
+frequency     : 50.0Hz
+
+voltage       : 220.8V
+
+current       : 2.005A
+
+activepower   : 440.8W
+
+reactivepower : 2.8W
+
+apparentpower : 440.8W
+
+powerfactor   : 0.00 
+
+ENLOGIC>
+--++Phase 3 ++精度验证：成功:2.0A,PF=1.0,offset 0.000020,0.002179,0.002500,0.000363,0.000363,
+----Set the load to 12.0 PF=1.0
+--精度验证，加载：12A, PF=1.00
+--
+Frequence:49.999000
+Voltage:220.530000
+Current:11.990000
+Active Power:0.000000
+Apparent Power:0.000000
+
+----Load Set Sucessfully.
+--负载加载成功
+----Waiting 2s
+----Power Meter Value:
+Frequence:49.999000
+Voltage:219.940000
+Current:12.000000
+Active Power:2639.280000
+Apparent Power:2639.280000
+--Power Meter Value(add R):
+Frequence:49.999000
+Voltage:219.940000
+Current:12.000000
+Active Power:2639.280000
+Apparent Power:2639.280000
+compensation(R):0.000000
+----Send: get power 2 3
+[Send]:ft get power 2 3
+[Receive]:00
+
+Get powersupply Chip #2 Phase #3 Feature
+
+frequency     : 50.0Hz
+
+voltage       : 219.8V
+
+current       : 11.996A
+
+activepower   : 2575.7W
+
+reactivepower : 50.8W
+
+apparentpower : 2576.2W
+
+powerfactor   : 0.00 
+
+ENLOGIC>
+--ft get power 2 3
+
+E000
+
+Get powersupply Chip #2 Phase #3 Feature
+
+frequency     : 50.0Hz
+
+voltage       : 219.8V
+
+current       : 11.996A
+
+activepower   : 2575.7W
+
+reactivepower : 50.8W
+
+apparentpower : 2576.2W
+
+powerfactor   : 0.00 
+
+ENLOGIC>
+----Wating for 8s
+----Send: get power 2 3
+[Send]:ft get power 2 3
+[Receive]:00
+
+Get powersupply Chip #2 Phase #3 Feature
+
+frequency     : 50.0Hz
+
+voltage       : 219.6V
+
+current       : 11.997A
+
+activepower   : 2642.6W
+
+reactivepower : 51.4W
+
+apparentpower : 2643.1W
+
+powerfactor   : 0.00 
+
+ENLOGIC>
+--ft get power 2 3
+
+E000
+
+Get powersupply Chip #2 Phase #3 Feature
+
+frequency     : 50.0Hz
+
+voltage       : 219.6V
+
+current       : 11.997A
+
+activepower   : 2642.6W
+
+reactivepower : 51.4W
+
+apparentpower : 2643.1W
+
+powerfactor   : 0.00 
+
+ENLOGIC>
+--++Phase 3 ++精度验证：成功:12.0A,PF=1.0,offset 0.000000,0.002000,0.000250,0.000803,0.000992,
+----Set the load to 20.0 PF=1.0
+--精度验证，加载：20A, PF=1.00
+--等待10s使电阻值稳定
+--Current:16.79
+--Current:16.73
+--负载加载成功
+----Waiting 2s
+----Power Meter Value:
+Frequence:50.000000
+Voltage:219.830000
+Current:16.720000
+Active Power:3675.557600
+Apparent Power:3675.557600
+--Power Meter Value(add R):
+Frequence:50.000000
+Voltage:219.830000
+Current:16.720000
+Active Power:3675.557600
+Apparent Power:3675.557600
+compensation(R):0.000000
+----Send: get power 2 3
+[Send]:ft get power 2 3
+[Receive]:00
+
+Get powersupply Chip #2 Phase #3 Feature
+
+frequency     : 50.0Hz
+
+voltage       : 219.5V
+
+current       : 16.729A
+
+activepower   : 3679.3W
+
+reactivepower : 60.7W
+
+apparentpower : 3679.8W
+
+powerfactor   : 0.00 
+
+ENLOGIC>
+--ft get power 2 3
+
+E000
+
+Get powersupply Chip #2 Phase #3 Feature
+
+frequency     : 50.0Hz
+
+voltage       : 219.5V
+
+current       : 16.729A
+
+activepower   : 3679.3W
+
+reactivepower : 60.7W
+
+apparentpower : 3679.8W
+
+powerfactor   : 0.00 
+
+ENLOGIC>
+--++Phase 3 ++精度验证：成功:20.0A,PF=1.0,offset 0.000020,0.001547,0.000538,0.000973,0.001109,
+----Set the load to 20.0 PF=1.0
+--精度验证，加载：20A, PF=1.00
+--等待10s使电阻值稳定
+--Current:16.74
+--负载加载成功
+----Waiting 2s
+----Power Meter Value:
+Frequence:49.999000
+Voltage:219.820000
+Current:16.720000
+Active Power:3675.390400
+Apparent Power:3675.390400
+--Power Meter Value(add R):
+Frequence:49.999000
+Voltage:219.820000
+Current:16.720000
+Active Power:3675.390400
+Apparent Power:3675.390400
+compensation(R):0.000000
+----Send: get power 2 3
+[Send]:ft get power 2 3
+[Receive]:00
+
+Get powersupply Chip #2 Phase #3 Feature
+
+frequency     : 50.0Hz
+
+voltage       : 219.4V
+
+current       : 16.728A
+
+activepower   : 3679.3W
+
+reactivepower : 60.7W
+
+apparentpower : 3679.8W
+
+powerfactor   : 0.00 
+
+ENLOGIC>
+--ft get power 2 3
+
+E000
+
+Get powersupply Chip #2 Phase #3 Feature
+
+frequency     : 50.0Hz
+
+voltage       : 219.4V
+
+current       : 16.728A
+
+activepower   : 3679.3W
+
+reactivepower : 60.7W
+
+apparentpower : 3679.8W
+
+powerfactor   : 0.00 
+
+ENLOGIC>
+--++Phase 3 ++精度验证：成功:20.0A,PF=1.0,offset 0.000000,0.001911,0.000478,0.001064,0.001200,
+----Phase 3 finished accuracy calibrate and verify
+--ft eeprom energyclr
+
+E000
+
+
+电量清除成功
+----Login on FT mode :3771ms/1time
+----Login on FT mode :3772ms/2time
+----Login on FT mode :3108ms/3time
+[Send]:ft eeprom store
+[Receive]:00
+
+ENLOGIC>
+--eeprom保存成功
+[Send]:ft log del data
+[Receive]:ft log del data
+
+E802
+
+ENLOGIC>
+[Send]:ft log del event
+[Receive]:00
+
+ENLOGIC>
+[Send]:ft ftp close
+[Receive]:ft ftp close
+
+E802
+
+FTP is closed
+
+ENLOGIC>
+--The whole test costs 1043s
+----Send test result to MDM and Local database
+----MDM send code: 01
+MDM存储合格
+--MDM存储数据成功
+--WS02
+SW ver: 20141020

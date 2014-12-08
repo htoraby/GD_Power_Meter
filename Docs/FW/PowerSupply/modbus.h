@@ -6,10 +6,10 @@
 #define READ_CODE 0X03
 
 #define MODBUS_GENERATOR 0xA001
-
+/**for CT ratio 2000:1**/
 #define V_FACTOR 359
-#define C_FACTOR 1765
-#define A_FACTOR 78
+#define C_FACTOR 1732
+#define A_FACTOR 80
 
 volatile unsigned int CRC;
 
