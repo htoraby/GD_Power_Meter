@@ -173,76 +173,80 @@ GenerateClassCluster=0
 DocumentUniqueId=
 
 [GeneratedDocument1]
-DocumentPath=Project Outputs for GD_Power_Meter\GD_Power_Meter_Draft-Plated.TXT
+DocumentPath=Project Outputs for GD_Power_Meter\Design Rule Check - GD_Power_Meter_Draft.html
 DItemRevisionGUID=
 
 [GeneratedDocument2]
-DocumentPath=Project Outputs for GD_Power_Meter\GD_Power_Meter_Draft.DRR
+DocumentPath=Project Outputs for GD_Power_Meter\GD_Power_Meter_Draft-Plated.TXT
 DItemRevisionGUID=
 
 [GeneratedDocument3]
-DocumentPath=Project Outputs for GD_Power_Meter\GD_Power_Meter_Draft.EXTREP
+DocumentPath=Project Outputs for GD_Power_Meter\GD_Power_Meter_Draft.DRR
 DItemRevisionGUID=
 
 [GeneratedDocument4]
-DocumentPath=Project Outputs for GD_Power_Meter\GD_Power_Meter_Draft.GBL
+DocumentPath=Project Outputs for GD_Power_Meter\GD_Power_Meter_Draft.EXTREP
 DItemRevisionGUID=
 
 [GeneratedDocument5]
-DocumentPath=Project Outputs for GD_Power_Meter\GD_Power_Meter_Draft.GBO
+DocumentPath=Project Outputs for GD_Power_Meter\GD_Power_Meter_Draft.GBL
 DItemRevisionGUID=
 
 [GeneratedDocument6]
-DocumentPath=Project Outputs for GD_Power_Meter\GD_Power_Meter_Draft.GBS
+DocumentPath=Project Outputs for GD_Power_Meter\GD_Power_Meter_Draft.GBO
 DItemRevisionGUID=
 
 [GeneratedDocument7]
-DocumentPath=Project Outputs for GD_Power_Meter\GD_Power_Meter_Draft.GD1
+DocumentPath=Project Outputs for GD_Power_Meter\GD_Power_Meter_Draft.GBS
 DItemRevisionGUID=
 
 [GeneratedDocument8]
-DocumentPath=Project Outputs for GD_Power_Meter\GD_Power_Meter_Draft.GG1
+DocumentPath=Project Outputs for GD_Power_Meter\GD_Power_Meter_Draft.GD1
 DItemRevisionGUID=
 
 [GeneratedDocument9]
-DocumentPath=Project Outputs for GD_Power_Meter\GD_Power_Meter_Draft.GM1
+DocumentPath=Project Outputs for GD_Power_Meter\GD_Power_Meter_Draft.GG1
 DItemRevisionGUID=
 
 [GeneratedDocument10]
-DocumentPath=Project Outputs for GD_Power_Meter\GD_Power_Meter_Draft.GTL
+DocumentPath=Project Outputs for GD_Power_Meter\GD_Power_Meter_Draft.GM1
 DItemRevisionGUID=
 
 [GeneratedDocument11]
-DocumentPath=Project Outputs for GD_Power_Meter\GD_Power_Meter_Draft.GTO
+DocumentPath=Project Outputs for GD_Power_Meter\GD_Power_Meter_Draft.GTL
 DItemRevisionGUID=
 
 [GeneratedDocument12]
-DocumentPath=Project Outputs for GD_Power_Meter\GD_Power_Meter_Draft.GTS
+DocumentPath=Project Outputs for GD_Power_Meter\GD_Power_Meter_Draft.GTO
 DItemRevisionGUID=
 
 [GeneratedDocument13]
-DocumentPath=Project Outputs for GD_Power_Meter\GD_Power_Meter_Draft.LDP
+DocumentPath=Project Outputs for GD_Power_Meter\GD_Power_Meter_Draft.GTS
 DItemRevisionGUID=
 
 [GeneratedDocument14]
-DocumentPath=Project Outputs for GD_Power_Meter\GD_Power_Meter_Draft.REP
+DocumentPath=Project Outputs for GD_Power_Meter\GD_Power_Meter_Draft.LDP
 DItemRevisionGUID=
 
 [GeneratedDocument15]
+DocumentPath=Project Outputs for GD_Power_Meter\GD_Power_Meter_Draft.REP
+DItemRevisionGUID=
+
+[GeneratedDocument16]
 DocumentPath=Project Outputs for GD_Power_Meter\GD_Power_Meter_Draft.RUL
 DItemRevisionGUID=
 
 [Parameter1]
-Name=Project
-Value=Power_Meter
+Name=PCBA P/N
+Value=GDPA00001
 
 [Parameter2]
 Name=PCB P/N
 Value=GDPB00001
 
 [Parameter3]
-Name=PCBA P/N
-Value=GDPA00001
+Name=Project
+Value=Power_Meter
 
 [Configuration1]
 Name=Default Configuration
@@ -557,12 +561,6 @@ OutputDocumentPath17=
 OutputVariantName17=
 OutputDefault17=0
 PageOptions17=Record=PageOptions|CenterHorizontal=True|CenterVertical=True|PrintScale=1.00|XCorrection=1.00|YCorrection=1.00|PrintKind=1|BorderSize=5000000|LeftOffset=0|BottomOffset=0|Orientation=2|PaperLength=1000|PaperWidth=1000|Scale=100|PaperSource=7|PrintQuality=-3|MediaType=1|DitherType=10|PrintScaleMode=1|PaperKind=A4|PaperIndex=9
-OutputType18=Software Platform Print
-OutputName18=Software Platform Prints
-OutputDocumentPath18=
-OutputVariantName18=
-OutputDefault18=0
-PageOptions18=Record=PageOptions|CenterHorizontal=True|CenterVertical=True|PrintScale=1.00|XCorrection=1.00|YCorrection=1.00|PrintKind=1|BorderSize=5000000|LeftOffset=0|BottomOffset=0|Orientation=2|PaperLength=1000|PaperWidth=1000|Scale=100|PaperSource=7|PrintQuality=-3|MediaType=1|DitherType=10|PrintScaleMode=1|PaperKind=A4|PaperIndex=9
 
 [OutputGroup4]
 Name=Assembly Outputs
