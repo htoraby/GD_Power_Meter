@@ -1,7 +1,7 @@
 
 # 1 "C:\Users\jeqi\Documents\GD_Power_Meter\Docs\FW\PowerSupply\main.c"
 
-# 132 "C:\Program Files (x86)\HI-TECH Software\PICC\9.83\include\pic16f1827.h"
+# 132 "d:\Program Files (x86)\HI-TECH Software\PICC\9.83\include\pic16f1827.h"
 volatile unsigned char INDF0 @ 0x000;
 
 
@@ -2529,21 +2529,21 @@ unsigned TOSH : 7;
 } TOSHbits @ 0xFEF;
 
 
-# 27 "C:\Program Files (x86)\HI-TECH Software\PICC\9.83\include\pic.h"
+# 27 "d:\Program Files (x86)\HI-TECH Software\PICC\9.83\include\pic.h"
 #pragma inline(_nop)
 extern void _nop(void);
 
 # 80
 extern unsigned int flash_read(unsigned short addr);
 
-# 41 "C:\Program Files (x86)\HI-TECH Software\PICC\9.83\include\eeprom_routines.h"
+# 41 "d:\Program Files (x86)\HI-TECH Software\PICC\9.83\include\eeprom_routines.h"
 extern unsigned char eeprom_write(unsigned char addr, unsigned char value);
 extern unsigned char eeprom_read(unsigned char addr);
 extern void eecpymem(volatile unsigned char *to, eeprom unsigned char *from, unsigned char size);
 extern void memcpyee(eeprom unsigned char *to, const unsigned char *from, unsigned char size);
 
 
-# 153 "C:\Program Files (x86)\HI-TECH Software\PICC\9.83\include\pic.h"
+# 153 "d:\Program Files (x86)\HI-TECH Software\PICC\9.83\include\pic.h"
 #pragma inline(_delay)
 extern void _delay(unsigned long);
 
@@ -2608,7 +2608,7 @@ uchar AD7758_check_init(uchar chip);
 extern ADE7758_D ADE7758Data[2];
 
 # 9 "C:\Users\jeqi\Documents\GD_Power_Meter\Docs\FW\PowerSupply\main.c"
-asm("\tpsect config,class=CONFIG,delta=2"); asm("\tdw ""0xFFFC & 0xFFFF & 0xFFE7 & 0xFFFF & 0xFFBF & 0xFFFF & 0xFFFF & 0xDFFF & 0xFDFF & 0xF9FF") ;
+asm("\tpsect config,class=CONFIG,delta=2"); asm("\tdw ""0xFFFC & 0xFFFF & 0xFFFF & 0xFFFF & 0xFFBF & 0xFFFF & 0xFFFF & 0xDFFF & 0xFDFF & 0xF9FF") ;
 
 
 
@@ -2866,6 +2866,7 @@ if (AD7758_check_init(0x01) == 0 )
 AD7758_init(1);
 }
 }
+asm("clrwdt");
 }
 
 }

@@ -2,7 +2,7 @@
 [d version 1.1 ]
 [d edition pro ]
 [d chip 16F1827 ]
-"150 C:\Program Files (x86)\HI-TECH Software\PICC\9.83\include\pic16f1827.h
+"150 d:\Program Files (x86)\HI-TECH Software\PICC\9.83\include\pic16f1827.h
 [s S28 . 1 `uc 1 C 1 0 :1:0 
 `uc 1 DC 1 0 :1:1 
 `uc 1 Z 1 0 :1:2 
@@ -973,7 +973,7 @@
 "27 C:\Users\jeqi\Documents\GD_Power_Meter\Docs\FW\PowerSupply\ADE7758.c
 [s S2535 . 16 `[2]uc 1 Frequency 2 0 `[3]uc 1 Voltage 3 2 `[3]uc 1 Current 3 5 `[2]uc 1 Active_Power 2 8 `[2]uc 1 Apparent_Power 2 10 `ul 1 Energy 4 12 ]
 [s S2542 . 49 `S2535 1 PhaseA 16 0 `S2535 1 PhaseB 16 16 `S2535 1 PhaseC 16 32 `c 1 Temper 1 48 ]
-"150 C:\Program Files (x86)\HI-TECH Software\PICC\9.83\include\pic16f1827.h
+"150 d:\Program Files (x86)\HI-TECH Software\PICC\9.83\include\pic16f1827.h
 [s S2610 . 1 `uc 1 C 1 0 :1:0 
 `uc 1 DC 1 0 :1:1 
 `uc 1 Z 1 0 :1:2 
@@ -1943,7 +1943,7 @@
 [u S4319 . 1 `S2525 1 . 1 0 ]
 "132 C:\Users\jeqi\Documents\GD_Power_Meter\Docs\FW\PowerSupply\main.c
 [v F2289 `(v  1 t 0 ]
-"150 C:\Program Files (x86)\HI-TECH Software\PICC\9.83\include\pic16f1827.h
+"150 d:\Program Files (x86)\HI-TECH Software\PICC\9.83\include\pic16f1827.h
 [s S4398 . 1 `uc 1 C 1 0 :1:0 
 `uc 1 DC 1 0 :1:1 
 `uc 1 Z 1 0 :1:2 
@@ -2914,7 +2914,7 @@
 "29 C:\Users\jeqi\Documents\GD_Power_Meter\Docs\FW\PowerSupply\modbus.h
 [s S6120 . 16 `[2]uc 1 Frequency 2 0 `[3]uc 1 Voltage 3 2 `[3]uc 1 Current 3 5 `[2]uc 1 Active_Power 2 8 `[2]uc 1 Apparent_Power 2 10 `ul 1 Energy 4 12 ]
 [s S6127 . 49 `S2535 1 PhaseA 16 0 `S2535 1 PhaseB 16 16 `S2535 1 PhaseC 16 32 `c 1 Temper 1 48 ]
-"150 C:\Program Files (x86)\HI-TECH Software\PICC\9.83\include\pic16f1827.h
+"150 d:\Program Files (x86)\HI-TECH Software\PICC\9.83\include\pic16f1827.h
 [s S6159 . 1 `uc 1 C 1 0 :1:0 
 `uc 1 DC 1 0 :1:1 
 `uc 1 Z 1 0 :1:2 
@@ -3882,78 +3882,6 @@
 [s S7866 . 1 `uc 1 TOSH 1 0 :7:0 
 ]
 [u S7868 . 1 `S2525 1 . 1 0 ]
-"5 C:\Program Files (x86)\HI-TECH Software\PICC\9.83\sources\abdiv.c
-[v ___abdiv `(c  1 e 1 0 ]
-"5 C:\Program Files (x86)\HI-TECH Software\PICC\9.83\sources\abmod.c
-[v ___abmod `(c  1 e 1 0 ]
-"34 C:\Program Files (x86)\HI-TECH Software\PICC\9.83\sources\abtoft.c
-[v ___abtoft `(f  1 e 3 0 ]
-"5 C:\Program Files (x86)\HI-TECH Software\PICC\9.83\sources\aldiv.c
-[v ___aldiv `(l  1 e 4 0 ]
-"5 C:\Program Files (x86)\HI-TECH Software\PICC\9.83\sources\almod.c
-[v ___almod `(l  1 e 4 0 ]
-"43 C:\Program Files (x86)\HI-TECH Software\PICC\9.83\sources\altoft.c
-[v ___altoft `(f  1 e 3 0 ]
-"5 C:\Program Files (x86)\HI-TECH Software\PICC\9.83\sources\atdiv.c
-[v ___atdiv `(m  1 e 3 0 ]
-"5 C:\Program Files (x86)\HI-TECH Software\PICC\9.83\sources\atmod.c
-[v ___atmod `(m  1 e 3 0 ]
-"38 C:\Program Files (x86)\HI-TECH Software\PICC\9.83\sources\attoft.c
-[v ___attoft `(f  1 e 3 0 ]
-"5 C:\Program Files (x86)\HI-TECH Software\PICC\9.83\sources\awdiv.c
-[v ___awdiv `(i  1 e 2 0 ]
-"5 C:\Program Files (x86)\HI-TECH Software\PICC\9.83\sources\awmod.c
-[v ___awmod `(i  1 e 2 0 ]
-"33 C:\Program Files (x86)\HI-TECH Software\PICC\9.83\sources\awtoft.c
-[v ___awtoft `(f  1 e 3 0 ]
-"3 C:\Program Files (x86)\HI-TECH Software\PICC\9.83\sources\bmul.c
-[v ___bmul `(uc  1 e 1 0 ]
-"63 C:\Program Files (x86)\HI-TECH Software\PICC\9.83\sources\float.c
-[v ___ftpack `(f  1 e 3 0 ]
-"87 C:\Program Files (x86)\HI-TECH Software\PICC\9.83\sources\ftadd.c
-[v ___ftadd `(f  1 e 3 0 ]
-"50 C:\Program Files (x86)\HI-TECH Software\PICC\9.83\sources\ftdiv.c
-[v ___ftdiv `(f  1 e 3 0 ]
-"5 C:\Program Files (x86)\HI-TECH Software\PICC\9.83\sources\ftge.c
-[v ___ftge `(b  1 e 0 0 ]
-"52 C:\Program Files (x86)\HI-TECH Software\PICC\9.83\sources\ftmul.c
-[v ___ftmul `(f  1 e 3 0 ]
-"16 C:\Program Files (x86)\HI-TECH Software\PICC\9.83\sources\ftneg.c
-[v ___ftneg `(f  1 e 3 0 ]
-"17 C:\Program Files (x86)\HI-TECH Software\PICC\9.83\sources\ftsub.c
-[v ___ftsub `(f  1 e 3 0 ]
-"45 C:\Program Files (x86)\HI-TECH Software\PICC\9.83\sources\fttol.c
-[v ___fttol `(l  1 e 4 0 ]
-"5 C:\Program Files (x86)\HI-TECH Software\PICC\9.83\sources\lbdiv.c
-[v ___lbdiv `(uc  1 e 1 0 ]
-"5 C:\Program Files (x86)\HI-TECH Software\PICC\9.83\sources\lbmod.c
-[v ___lbmod `(uc  1 e 1 0 ]
-"28 C:\Program Files (x86)\HI-TECH Software\PICC\9.83\sources\lbtoft.c
-[v ___lbtoft `(f  1 e 3 0 ]
-"5 C:\Program Files (x86)\HI-TECH Software\PICC\9.83\sources\lldiv.c
-[v ___lldiv `(ul  1 e 4 0 ]
-"5 C:\Program Files (x86)\HI-TECH Software\PICC\9.83\sources\llmod.c
-[v ___llmod `(ul  1 e 4 0 ]
-"36 C:\Program Files (x86)\HI-TECH Software\PICC\9.83\sources\lltoft.c
-[v ___lltoft `(f  1 e 3 0 ]
-"3 C:\Program Files (x86)\HI-TECH Software\PICC\9.83\sources\lmul.c
-[v ___lmul `(ul  1 e 4 0 ]
-"5 C:\Program Files (x86)\HI-TECH Software\PICC\9.83\sources\ltdiv.c
-[v ___ltdiv `(um  1 e 3 0 ]
-"5 C:\Program Files (x86)\HI-TECH Software\PICC\9.83\sources\ltmod.c
-[v ___ltmod `(um  1 e 3 0 ]
-"31 C:\Program Files (x86)\HI-TECH Software\PICC\9.83\sources\lttoft.c
-[v ___lttoft `(f  1 e 3 0 ]
-"5 C:\Program Files (x86)\HI-TECH Software\PICC\9.83\sources\lwdiv.c
-[v ___lwdiv `(ui  1 e 2 0 ]
-"5 C:\Program Files (x86)\HI-TECH Software\PICC\9.83\sources\lwmod.c
-[v ___lwmod `(ui  1 e 2 0 ]
-"29 C:\Program Files (x86)\HI-TECH Software\PICC\9.83\sources\lwtoft.c
-[v ___lwtoft `(f  1 e 3 0 ]
-"3 C:\Program Files (x86)\HI-TECH Software\PICC\9.83\sources\tmul.c
-[v ___tmul `(um  1 e 3 0 ]
-"3 C:\Program Files (x86)\HI-TECH Software\PICC\9.83\sources\wmul.c
-[v ___wmul `(ui  1 e 2 0 ]
 "34 C:\Users\jeqi\Documents\GD_Power_Meter\Docs\FW\PowerSupply\ADE7758.c
 [v _AD7758_CS `(v  1 e 0 0 ]
 "59
@@ -4000,6 +3928,78 @@
 [v _calculateCRC8 `(uc  1 e 1 0 ]
 "101
 [v _sleep `(v  1 e 0 0 ]
+"5 d:\Program Files (x86)\HI-TECH Software\PICC\9.83\sources\abdiv.c
+[v ___abdiv `(c  1 e 1 0 ]
+"5 d:\Program Files (x86)\HI-TECH Software\PICC\9.83\sources\abmod.c
+[v ___abmod `(c  1 e 1 0 ]
+"34 d:\Program Files (x86)\HI-TECH Software\PICC\9.83\sources\abtoft.c
+[v ___abtoft `(f  1 e 3 0 ]
+"5 d:\Program Files (x86)\HI-TECH Software\PICC\9.83\sources\aldiv.c
+[v ___aldiv `(l  1 e 4 0 ]
+"5 d:\Program Files (x86)\HI-TECH Software\PICC\9.83\sources\almod.c
+[v ___almod `(l  1 e 4 0 ]
+"43 d:\Program Files (x86)\HI-TECH Software\PICC\9.83\sources\altoft.c
+[v ___altoft `(f  1 e 3 0 ]
+"5 d:\Program Files (x86)\HI-TECH Software\PICC\9.83\sources\atdiv.c
+[v ___atdiv `(m  1 e 3 0 ]
+"5 d:\Program Files (x86)\HI-TECH Software\PICC\9.83\sources\atmod.c
+[v ___atmod `(m  1 e 3 0 ]
+"38 d:\Program Files (x86)\HI-TECH Software\PICC\9.83\sources\attoft.c
+[v ___attoft `(f  1 e 3 0 ]
+"5 d:\Program Files (x86)\HI-TECH Software\PICC\9.83\sources\awdiv.c
+[v ___awdiv `(i  1 e 2 0 ]
+"5 d:\Program Files (x86)\HI-TECH Software\PICC\9.83\sources\awmod.c
+[v ___awmod `(i  1 e 2 0 ]
+"33 d:\Program Files (x86)\HI-TECH Software\PICC\9.83\sources\awtoft.c
+[v ___awtoft `(f  1 e 3 0 ]
+"3 d:\Program Files (x86)\HI-TECH Software\PICC\9.83\sources\bmul.c
+[v ___bmul `(uc  1 e 1 0 ]
+"63 d:\Program Files (x86)\HI-TECH Software\PICC\9.83\sources\float.c
+[v ___ftpack `(f  1 e 3 0 ]
+"87 d:\Program Files (x86)\HI-TECH Software\PICC\9.83\sources\ftadd.c
+[v ___ftadd `(f  1 e 3 0 ]
+"50 d:\Program Files (x86)\HI-TECH Software\PICC\9.83\sources\ftdiv.c
+[v ___ftdiv `(f  1 e 3 0 ]
+"5 d:\Program Files (x86)\HI-TECH Software\PICC\9.83\sources\ftge.c
+[v ___ftge `(b  1 e 0 0 ]
+"52 d:\Program Files (x86)\HI-TECH Software\PICC\9.83\sources\ftmul.c
+[v ___ftmul `(f  1 e 3 0 ]
+"16 d:\Program Files (x86)\HI-TECH Software\PICC\9.83\sources\ftneg.c
+[v ___ftneg `(f  1 e 3 0 ]
+"17 d:\Program Files (x86)\HI-TECH Software\PICC\9.83\sources\ftsub.c
+[v ___ftsub `(f  1 e 3 0 ]
+"45 d:\Program Files (x86)\HI-TECH Software\PICC\9.83\sources\fttol.c
+[v ___fttol `(l  1 e 4 0 ]
+"5 d:\Program Files (x86)\HI-TECH Software\PICC\9.83\sources\lbdiv.c
+[v ___lbdiv `(uc  1 e 1 0 ]
+"5 d:\Program Files (x86)\HI-TECH Software\PICC\9.83\sources\lbmod.c
+[v ___lbmod `(uc  1 e 1 0 ]
+"28 d:\Program Files (x86)\HI-TECH Software\PICC\9.83\sources\lbtoft.c
+[v ___lbtoft `(f  1 e 3 0 ]
+"5 d:\Program Files (x86)\HI-TECH Software\PICC\9.83\sources\lldiv.c
+[v ___lldiv `(ul  1 e 4 0 ]
+"5 d:\Program Files (x86)\HI-TECH Software\PICC\9.83\sources\llmod.c
+[v ___llmod `(ul  1 e 4 0 ]
+"36 d:\Program Files (x86)\HI-TECH Software\PICC\9.83\sources\lltoft.c
+[v ___lltoft `(f  1 e 3 0 ]
+"3 d:\Program Files (x86)\HI-TECH Software\PICC\9.83\sources\lmul.c
+[v ___lmul `(ul  1 e 4 0 ]
+"5 d:\Program Files (x86)\HI-TECH Software\PICC\9.83\sources\ltdiv.c
+[v ___ltdiv `(um  1 e 3 0 ]
+"5 d:\Program Files (x86)\HI-TECH Software\PICC\9.83\sources\ltmod.c
+[v ___ltmod `(um  1 e 3 0 ]
+"31 d:\Program Files (x86)\HI-TECH Software\PICC\9.83\sources\lttoft.c
+[v ___lttoft `(f  1 e 3 0 ]
+"5 d:\Program Files (x86)\HI-TECH Software\PICC\9.83\sources\lwdiv.c
+[v ___lwdiv `(ui  1 e 2 0 ]
+"5 d:\Program Files (x86)\HI-TECH Software\PICC\9.83\sources\lwmod.c
+[v ___lwmod `(ui  1 e 2 0 ]
+"29 d:\Program Files (x86)\HI-TECH Software\PICC\9.83\sources\lwtoft.c
+[v ___lwtoft `(f  1 e 3 0 ]
+"3 d:\Program Files (x86)\HI-TECH Software\PICC\9.83\sources\tmul.c
+[v ___tmul `(um  1 e 3 0 ]
+"3 d:\Program Files (x86)\HI-TECH Software\PICC\9.83\sources\wmul.c
+[v ___wmul `(ui  1 e 2 0 ]
 "7 eeprom.c
 [v _eecpymem `(v  1 e 0 0 ]
 "25
@@ -5282,7 +5282,42 @@
 [v _TOSL `VEuc  1 e 1 @4078 ]
 "2772
 [v _TOSH `VEuc  1 e 1 @4079 ]
-"162 C:\Program Files (x86)\HI-TECH Software\PICC\9.83\include\pic16f1827.h
+"25 C:\Users\jeqi\Documents\GD_Power_Meter\Docs\FW\PowerSupply\ADE7758.c
+[v _ReadData `[3]uc  1 e 3 0 ]
+"26
+[v _SendData `[3]uc  1 e 3 0 ]
+"27
+[v _FreqPhase `[2]uc  1 e 2 0 ]
+"28
+[v _ADE7758Data `[2]S2542  1 e 98 @8462 ]
+"14 C:\Users\jeqi\Documents\GD_Power_Meter\Docs\FW\PowerSupply\main.c
+[v _Sample_flag `VEb  1 s 0 Sample_flag ]
+"15
+[v _AbnorProcFlag `VEb  1 s 0 AbnorProcFlag ]
+"16
+[v _gs50msCnt `us  1 s 2 gs50msCnt ]
+"14 C:\Users\jeqi\Documents\GD_Power_Meter\Docs\FW\PowerSupply\modbus.h
+[v _CRC `VEui  1 e 2 0 ]
+"20
+[v _rx_timeout `VEuc  1 s 1 rx_timeout ]
+[v modbus@rx_timeout `VEuc  1 s 1 rx_timeout ]
+"21
+[v _rx_data `VE[64]uc  1 e 64 0 ]
+"22
+[v _rx_data_counter `VEuc  1 e 1 0 ]
+"23
+[v _rx_data_flag `VEb  1 e 0 0 ]
+"25
+[v _tx_data `VE[64]uc  1 e 64 0 ]
+"26
+[v _tx_data_num `VEuc  1 e 1 0 ]
+"27
+[v _tx_data_index `VEuc  1 e 1 0 ]
+"28
+[v _tx_timeout_flag `VEb  1 e 0 0 ]
+"29
+[v _address `VEuc  1 e 1 0 ]
+"162 d:\Program Files (x86)\HI-TECH Software\PICC\9.83\include\pic16f1827.h
 [v _STATUSbits `VES36  1 e 1 @3 ]
 "209
 [v _BSRbits `VES67  1 e 1 @8 ]
@@ -5458,45 +5493,10 @@
 [v _STKPTRbits `VES2498  1 e 1 @4077 ]
 "2779
 [v _TOSHbits `VES83  1 e 1 @4079 ]
-"25 C:\Users\jeqi\Documents\GD_Power_Meter\Docs\FW\PowerSupply\ADE7758.c
-[v _ReadData `[3]uc  1 e 3 0 ]
-"26
-[v _SendData `[3]uc  1 e 3 0 ]
-"27
-[v _FreqPhase `[2]uc  1 e 2 0 ]
-"28
-[v _ADE7758Data `[2]S2542  1 e 98 @8462 ]
-"14 C:\Users\jeqi\Documents\GD_Power_Meter\Docs\FW\PowerSupply\main.c
-[v _Sample_flag `VEb  1 s 0 Sample_flag ]
-"15
-[v _AbnorProcFlag `VEb  1 s 0 AbnorProcFlag ]
-"16
-[v _gs50msCnt `us  1 s 2 gs50msCnt ]
-"14 C:\Users\jeqi\Documents\GD_Power_Meter\Docs\FW\PowerSupply\modbus.h
-[v _CRC `VEui  1 e 2 0 ]
-"20
-[v _rx_timeout `VEuc  1 s 1 rx_timeout ]
-[v modbus@rx_timeout `VEuc  1 s 1 rx_timeout ]
-"21
-[v _rx_data `VE[64]uc  1 e 64 0 ]
-"22
-[v _rx_data_counter `VEuc  1 e 1 0 ]
-"23
-[v _rx_data_flag `VEb  1 e 0 0 ]
-"25
-[v _tx_data `VE[64]uc  1 e 64 0 ]
-"26
-[v _tx_data_num `VEuc  1 e 1 0 ]
-"27
-[v _tx_data_index `VEuc  1 e 1 0 ]
-"28
-[v _tx_timeout_flag `VEb  1 e 0 0 ]
-"29
-[v _address `VEuc  1 e 1 0 ]
 "242 C:\Users\jeqi\Documents\GD_Power_Meter\Docs\FW\PowerSupply\main.c
 [v _main `(v  1 e 0 0 ]
 {
-"275
+"276
 } 0
 "166 C:\Users\jeqi\Documents\GD_Power_Meter\Docs\FW\PowerSupply\modbus.c
 [v _modbus_main `(v  1 e 0 0 ]
@@ -5578,7 +5578,7 @@
 [v AD7758_CS@enable `uc  1 p 1 8 ]
 "55
 } 0
-"5 C:\Program Files (x86)\HI-TECH Software\PICC\9.83\sources\lldiv.c
+"5 d:\Program Files (x86)\HI-TECH Software\PICC\9.83\sources\lldiv.c
 [v ___lldiv `(ul  1 e 4 0 ]
 {
 "6
@@ -5590,7 +5590,7 @@
 [v ___lldiv@dividend `ul  1 p 4 4 ]
 "26
 } 0
-"3 C:\Program Files (x86)\HI-TECH Software\PICC\9.83\sources\lmul.c
+"3 d:\Program Files (x86)\HI-TECH Software\PICC\9.83\sources\lmul.c
 [v ___lmul `(ul  1 e 4 0 ]
 {
 "4
@@ -5600,7 +5600,7 @@
 [v ___lmul@multiplicand `ul  1 p 4 4 ]
 "13
 } 0
-"3 C:\Program Files (x86)\HI-TECH Software\PICC\9.83\sources\bmul.c
+"3 d:\Program Files (x86)\HI-TECH Software\PICC\9.83\sources\bmul.c
 [v ___bmul `(uc  1 e 1 0 ]
 {
 [v ___bmul@multiplier `uc  1 a 1 wreg ]
@@ -5673,7 +5673,7 @@
 [v isr@data `uc  1 a 1 5 ]
 "236
 } 0
-"5 C:\Program Files (x86)\HI-TECH Software\PICC\9.83\sources\lwmod.c
+"5 d:\Program Files (x86)\HI-TECH Software\PICC\9.83\sources\lwmod.c
 [v ___lwmod `(ui  1 e 2 0 ]
 {
 "6

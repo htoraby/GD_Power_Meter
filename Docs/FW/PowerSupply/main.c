@@ -6,7 +6,7 @@
 #include "util.h"
 #include "config.h"
 
-__CONFIG ( FOSC_INTOSC & CLKOUTEN_OFF & WDTE_OFF & PLLEN_ON & MCLRE_OFF & PLLEN_ON & WRT_OFF & FCMEN_OFF & STVREN_OFF & BOREN_OFF) ;
+__CONFIG ( FOSC_INTOSC & CLKOUTEN_OFF & WDTE_ON & PLLEN_ON & MCLRE_OFF & PLLEN_ON & WRT_OFF & FCMEN_OFF & STVREN_OFF & BOREN_OFF) ;
 
 #define CLRWDT() asm("clrwdt")
 
@@ -270,6 +270,7 @@ void main(void)
 				AD7758_init(1);
 			}
 		}
+		CLRWDT();
 	}
 
 }

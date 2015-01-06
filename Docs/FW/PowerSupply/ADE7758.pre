@@ -1,7 +1,7 @@
 
 # 1 "C:\Users\jeqi\Documents\GD_Power_Meter\Docs\FW\PowerSupply\ADE7758.c"
 
-# 132 "C:\Program Files (x86)\HI-TECH Software\PICC\9.83\include\pic16f1827.h"
+# 132 "d:\Program Files (x86)\HI-TECH Software\PICC\9.83\include\pic16f1827.h"
 volatile unsigned char INDF0 @ 0x000;
 
 
@@ -2529,21 +2529,21 @@ unsigned TOSH : 7;
 } TOSHbits @ 0xFEF;
 
 
-# 27 "C:\Program Files (x86)\HI-TECH Software\PICC\9.83\include\pic.h"
+# 27 "d:\Program Files (x86)\HI-TECH Software\PICC\9.83\include\pic.h"
 #pragma inline(_nop)
 extern void _nop(void);
 
 # 80
 extern unsigned int flash_read(unsigned short addr);
 
-# 41 "C:\Program Files (x86)\HI-TECH Software\PICC\9.83\include\eeprom_routines.h"
+# 41 "d:\Program Files (x86)\HI-TECH Software\PICC\9.83\include\eeprom_routines.h"
 extern unsigned char eeprom_write(unsigned char addr, unsigned char value);
 extern unsigned char eeprom_read(unsigned char addr);
 extern void eecpymem(volatile unsigned char *to, eeprom unsigned char *from, unsigned char size);
 extern void memcpyee(eeprom unsigned char *to, const unsigned char *from, unsigned char size);
 
 
-# 153 "C:\Program Files (x86)\HI-TECH Software\PICC\9.83\include\pic.h"
+# 153 "d:\Program Files (x86)\HI-TECH Software\PICC\9.83\include\pic.h"
 #pragma inline(_delay)
 extern void _delay(unsigned long);
 
@@ -2589,12 +2589,12 @@ void Sample_ADE7758(uchar chip);
 uchar AD7758_check_init(uchar chip);
 extern ADE7758_D ADE7758Data[2];
 
-# 12 "C:\Program Files (x86)\HI-TECH Software\PICC\9.83\include\stdio.h"
+# 12 "d:\Program Files (x86)\HI-TECH Software\PICC\9.83\include\stdio.h"
 typedef int ptrdiff_t;
 typedef unsigned size_t;
 typedef unsigned short wchar_t;
 
-# 31 "C:\Program Files (x86)\HI-TECH Software\PICC\9.83\include\stdarg.h"
+# 31 "d:\Program Files (x86)\HI-TECH Software\PICC\9.83\include\stdarg.h"
 typedef void * va_list[1];
 
 #pragma inline(__va_start)
@@ -2603,7 +2603,7 @@ extern void * __va_start(void);
 #pragma inline(__va_arg)
 extern void * __va_arg(void *, ...);
 
-# 27 "C:\Program Files (x86)\HI-TECH Software\PICC\9.83\include\stdio.h"
+# 27 "d:\Program Files (x86)\HI-TECH Software\PICC\9.83\include\stdio.h"
 extern int errno;
 
 # 58
@@ -2613,7 +2613,7 @@ char * ptr;
 void (* func)(char);
 };
 
-# 17 "C:\Program Files (x86)\HI-TECH Software\PICC\9.83\include\conio.h"
+# 17 "d:\Program Files (x86)\HI-TECH Software\PICC\9.83\include\conio.h"
 extern int errno;
 
 
@@ -2630,7 +2630,7 @@ extern bit kbhit(void);
 extern char * cgets(char *);
 extern void cputs(const char *);
 
-# 103 "C:\Program Files (x86)\HI-TECH Software\PICC\9.83\include\stdio.h"
+# 103 "d:\Program Files (x86)\HI-TECH Software\PICC\9.83\include\stdio.h"
 extern int cprintf(char *, ...);
 #pragma printf_check(cprintf)
 

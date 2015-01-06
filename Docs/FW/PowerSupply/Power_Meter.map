@@ -2,7 +2,7 @@ HI-TECH Software C Compiler
 
 Linker command line:
 
---edf=C:\Program Files (x86)\HI-TECH Software\PICC\9.83\dat\en_msgs.txt -cs \
+--edf=d:\Program Files (x86)\HI-TECH Software\PICC\9.83\dat\en_msgs.txt -cs \
   -h+Power_Meter.sym -z -Q16F1827 -ol.obj -MPower_Meter.map -E1 \
   -ACONST=00h-0FFhx16 -ACODE=00h-07FFhx2 -ASTRCODE=00h-0FFFh \
   -AENTRY=00h-0FFhx16 -ASTRING=00h-0FFhx16 -ABANK0=020h-06Fh \
@@ -39,7 +39,7 @@ startup.obj     end_init                             89       89        3       
 Power_Meter.obj intentry                              4        4       85        8       0
                 config                             8007     8007        1    1000E       0
                 text540                             FE0      FE0       20     1FC0       0
-                text523                              8C       8C      76E        8       0
+                text523                              8C       8C      76F        8       0
                 cstackBANK0                          20       20       27       20       1
                 cstackCOMMON                         76       76        6       70       1
                 clrtext                             FD4      FD4        C     1FA8       0
@@ -57,7 +57,7 @@ TOTAL           Name                               Link     Load   Length     Sp
                 intentry                              4        4       85         0
                 reset_vec                             0        0        2         0
                 text540                             FE0      FE0       20         0
-                text523                              8C       8C      76E         0
+                text523                              8C       8C      76F         0
                 clrtext                             FD4      FD4        C         0
 
         CLASS   STRCODE        
@@ -224,7 +224,7 @@ TOTAL           Name                               Link     Load   Length     Sp
 SEGMENTS        Name                           Load    Length   Top    Selector   Space  Class     Delta
 
                 reset_vec                      000000  000002  000002         0       0  CODE        2
-                intentry                       000004  0007F6  0007FA         8       0  CODE        2
+                intentry                       000004  0007F7  0007FB         8       0  CODE        2
                 cstackBANK0                    000020  000033  000053        20       1  BANK0       1
                 bssCOMMON                      000070  00000D  00007D        70       1  COMMON      1
                 bssBANK1                       0000A0  000040  0000E0        A0       1  BANK1       1
@@ -243,14 +243,14 @@ UNUSED ADDRESS RANGES
         BANK3            001A0-001BD              1E           1
         BIGRAM           02000-0216F             170           1
         CODE             00002-00003               2           2
-                         007FA-00FD3               6
+                         007FB-00FD3               5
         COMMON           0007D-0007D               1           1
         CONFIG           08008-08008               1           2
         CONST            00002-00003               2           2
-                         007FA-00FD3             100
+                         007FB-00FD3             100
         EEDATA           0F000-0F0FF             100           2
         ENTRY            00002-00003               2           2
-                         007FA-00FD3             100
+                         007FB-00FD3             100
         IDLOC            08000-08003               4           2
         RAM              00053-0006F              1D           1
                          000E0-000EF              10
@@ -289,9 +289,9 @@ UNUSED ADDRESS RANGES
         SFR8             00400-0046F              70           1
         SFR9             00480-004EF              70           1
         STRCODE          00002-00003               2           2
-                         007FA-00FD3             7DA
+                         007FB-00FD3             7D9
         STRING           00002-00003               2           2
-                         007FA-00FD3             100
+                         007FB-00FD3             100
 
                                   Symbol Table
 
@@ -359,11 +359,11 @@ ModbusCalcCRC@bitVal        cstackBANK0  00023
 ModbusCalcCRC@j             cstackBANK0  00025
 Sample_ADE7758@chip         cstackBANK0  00040
 Sample_ADE7758@sum          cstackBANK0  0003E
-_AD7758_CS                  text523      00409
+_AD7758_CS                  text523      0040A
 _AD7758_GetData             text523      0033D
-_AD7758_SendData            text523      003CF
-_AD7758_check_init          text523      00553
-_AD7758_init                text523      003A8
+_AD7758_SendData            text523      003D0
+_AD7758_check_init          text523      00554
+_AD7758_init                text523      003A9
 _ADCON1                     (abs)        0009E
 _ADE7758Data                (abs)        0210E
 _ANSELA                     (abs)        0018C
@@ -373,13 +373,13 @@ _BRG16                      (abs)        00CFB
 _BRGH                       (abs)        00CF2
 _CRC                        bssBANK0     0004D
 _CREN                       (abs)        00CEC
-_Delay                      text523      004E1
+_Delay                      text523      004E2
 _FERR                       (abs)        00CEA
 _FreqPhase                  bssBANK0     0004F
 _GIE                        (abs)        0005F
 _HFIOFR                     (abs)        004D4
-_Initialize                 text523      004FD
-_ModbusCalcCRC              text523      005BB
+_Initialize                 text523      004FE
+_ModbusCalcCRC              text523      005BC
 _OERR                       (abs)        00CE9
 _OPTION_REG                 (abs)        00095
 _OSCCON                     (abs)        00099
@@ -399,7 +399,7 @@ _SDO1SEL                    (abs)        008EE
 _SPBRGH                     (abs)        0019C
 _SPBRGL                     (abs)        0019B
 _SPEN                       (abs)        00CEF
-_SPI_Init                   text523      00420
+_SPI_Init                   text523      00421
 _SSP1ADD                    (abs)        00212
 _SSP1CON1bits               (abs)        00215
 _SSP1IF                     (abs)        0008B
@@ -633,12 +633,12 @@ ___bmul                     text523      00331
 ___bmul@multiplicand        cstackBANK0  00020
 ___bmul@multiplier          cstackBANK0  00022
 ___bmul@product             cstackBANK0  00021
-___lldiv                    text523      006D9
+___lldiv                    text523      006DA
 ___lldiv@counter            cstackBANK0  0002C
 ___lldiv@dividend           cstackBANK0  00024
 ___lldiv@divisor            cstackBANK0  00020
 ___lldiv@quotient           cstackBANK0  00028
-___lmul                     text523      00718
+___lmul                     text523      00719
 ___lmul@multiplicand        cstackBANK0  00024
 ___lmul@multiplier          cstackBANK0  00020
 ___lmul@product             cstackBANK0  00028
@@ -646,27 +646,27 @@ ___lwmod                    text540      00FE0
 ___lwmod@counter            cstackCOMMON 0007A
 ___lwmod@dividend           cstackCOMMON 00078
 ___lwmod@divisor            cstackCOMMON 00076
-__end_of_AD7758_CS          text523      00420
+__end_of_AD7758_CS          text523      00421
 __end_of_AD7758_GetData     text523      0034F
-__end_of_AD7758_SendData    text523      003E1
-__end_of_AD7758_check_init  text523      00575
-__end_of_AD7758_init        text523      003CF
-__end_of_Delay              text523      004FD
-__end_of_Initialize         text523      00553
-__end_of_ModbusCalcCRC      text523      005E0
-__end_of_SPI_Init           text523      00430
+__end_of_AD7758_SendData    text523      003E2
+__end_of_AD7758_check_init  text523      00576
+__end_of_AD7758_init        text523      003D0
+__end_of_Delay              text523      004FE
+__end_of_Initialize         text523      00554
+__end_of_ModbusCalcCRC      text523      005E1
+__end_of_SPI_Init           text523      00431
 __end_of_Sample_ADE7758     text523      00331
 __end_of___bmul             text523      0033D
-__end_of___lldiv            text523      00718
-__end_of___lmul             text523      0073D
+__end_of___lldiv            text523      00719
+__end_of___lmul             text523      0073E
 __end_of___lwmod            text540      01000
 __end_of_isr                intentry     00089
-__end_of_main               text523      003A8
-__end_of_modbus_init        text523      0043A
-__end_of_modbus_main        text523      005BB
-__end_of_rs485_send_data    text523      00743
-__end_of_sendHAHA           text523      006D9
-__end_of_spiSendByte        text523      00409
+__end_of_main               text523      003A9
+__end_of_modbus_init        text523      0043B
+__end_of_modbus_main        text523      005BC
+__end_of_rs485_send_data    text523      00744
+__end_of_sendHAHA           text523      006DA
+__end_of_spiSendByte        text523      0040A
 __pbitbssCOMMON             bitbssCOMMON 003E0
 __pbssBANK0                 bssBANK0     00047
 __pbssBANK1                 bssBANK1     000A0
@@ -677,24 +677,24 @@ __pcstackBANK0              cstackBANK0  00020
 __pcstackCOMMON             cstackCOMMON 00076
 __pintentry                 intentry     00004
 __pmaintext                 text523      00384
-__ptext521                  text523      00575
-__ptext522                  text523      00553
+__ptext521                  text523      00576
+__ptext522                  text523      00554
 __ptext523                  text523      0008C
-__ptext524                  text523      003A8
-__ptext525                  text523      005E0
-__ptext526                  text523      003CF
+__ptext524                  text523      003A9
+__ptext525                  text523      005E1
+__ptext526                  text523      003D0
 __ptext527                  text523      0033D
-__ptext528                  text523      00409
-__ptext529                  text523      006D9
-__ptext530                  text523      00718
+__ptext528                  text523      0040A
+__ptext529                  text523      006DA
+__ptext530                  text523      00719
 __ptext531                  text523      00331
-__ptext532                  text523      005BB
-__ptext533                  text523      0073D
-__ptext534                  text523      00430
-__ptext535                  text523      004FD
-__ptext536                  text523      00420
-__ptext537                  text523      003E1
-__ptext538                  text523      004E1
+__ptext532                  text523      005BC
+__ptext533                  text523      0073E
+__ptext534                  text523      00431
+__ptext535                  text523      004FE
+__ptext536                  text523      00421
+__ptext537                  text523      003E2
+__ptext538                  text523      004E2
 __ptext540                  text540      00FE0
 __ptext541                  text541      00000
 __size_of_AD7758_CS         (abs)        00000
@@ -723,15 +723,15 @@ _exit                       init         00089
 _gs50msCnt                  bssCOMMON    00070
 _isr                        intentry     00004
 _main                       text523      00384
-_modbus_init                text523      00430
-_modbus_main                text523      00575
-_rs485_send_data            text523      0073D
+_modbus_init                text523      00431
+_modbus_main                text523      00576
+_rs485_send_data            text523      0073E
 _rx_data                    bssBANK2     00120
 _rx_data_counter            bssCOMMON    00072
 _rx_data_flag               bitbssCOMMON 003E2
 _rx_timeout                 bssCOMMON    00073
-_sendHAHA                   text523      005E0
-_spiSendByte                text523      003E1
+_sendHAHA                   text523      005E1
+_spiSendByte                text523      003E2
 _tx_data                    bssBANK1     000A0
 _tx_data_index              bssCOMMON    00074
 _tx_data_num                bssCOMMON    00075
@@ -740,23 +740,23 @@ btemp                       (abs)        0007E
 clear_ram                   clrtext      00FD4
 end_of_initialization       text523      00382
 i1l7297                                       
-i1l9538                                       
-i1l9542                                       
-i1l9550                                       
-i1l9556                                       
-i1l9562                                       
+i1l9540                                       
+i1l9544                                       
+i1l9552                                       
+i1l9558                                       
 i1l9564                                       
 i1l9566                                       
-i1l9584                                       
+i1l9568                                       
 i1l9586                                       
-i1l9590                                       
+i1l9588                                       
 i1l9592                                       
 i1l9594                                       
-i1l9598                                       
-i1l9604                                       
-i1l9608                                       
-i1l9686                                       
-i1l9700                                       
+i1l9596                                       
+i1l9600                                       
+i1l9606                                       
+i1l9610                                       
+i1l9688                                       
+i1l9702                                       
 intlevel0                   functab      00000
 intlevel1                   functab      00000
 intlevel2                   functab      00000
@@ -764,12 +764,10 @@ intlevel3                   functab      00000
 intlevel4                   functab      00000
 intlevel5                   functab      00000
 isr@data                    cstackCOMMON 0007B
-l10396                                        
-l10398                                        
 l10400                                        
-l10410                                        
+l10402                                        
+l10404                                        
 l10414                                        
-l10416                                        
 l10418                                        
 l10420                                        
 l10422                                        
@@ -778,8 +776,8 @@ l10426
 l10428                                        
 l10430                                        
 l10432                                        
+l10434                                        
 l10436                                        
-l10438                                        
 l10440                                        
 l10442                                        
 l10444                                        
@@ -835,27 +833,27 @@ l10542
 l10544                                        
 l10546                                        
 l10548                                        
+l10550                                        
 l10552                                        
-l10560                                        
-l10562                                        
-l10568                                        
-l10574                                        
-l10580                                        
-l10582                                        
-l10592                                        
+l10556                                        
+l10564                                        
+l10566                                        
+l10572                                        
+l10578                                        
+l10584                                        
+l10586                                        
 l10596                                        
 l10600                                        
-l10606                                        
-l10608                                        
+l10604                                        
 l10610                                        
-l10618                                        
-l10620                                        
+l10612                                        
+l10614                                        
+l10622                                        
 l10624                                        
 l10628                                        
-l10630                                        
+l10632                                        
 l10634                                        
 l10638                                        
-l10640                                        
 l10642                                        
 l10644                                        
 l10646                                        
@@ -1016,44 +1014,46 @@ l10954
 l10956                                        
 l10958                                        
 l10960                                        
-l10966                                        
-l10968                                        
+l10962                                        
+l10964                                        
 l10970                                        
-l10976                                        
-l10978                                        
-l10984                                        
-l10990                                        
-l10992                                        
+l10972                                        
+l10974                                        
+l10980                                        
+l10982                                        
+l10988                                        
 l10994                                        
+l10996                                        
 l10998                                        
-l11004                                        
-l11006                                        
+l11002                                        
 l11008                                        
+l11010                                        
 l11012                                        
-l11018                                        
-l11020                                        
+l11016                                        
 l11022                                        
+l11024                                        
 l11026                                        
-l11028                                        
 l11030                                        
 l11032                                        
 l11034                                        
+l11036                                        
 l11038                                        
-l11046                                        
+l11042                                        
 l11050                                        
-l11052                                        
-l11060                                        
-l11062                                        
-l11072                                        
-l11078                                        
-l11080                                        
+l11054                                        
+l11056                                        
+l11064                                        
+l11066                                        
+l11076                                        
 l11082                                        
 l11084                                        
 l11086                                        
-l11094                                        
+l11088                                        
+l11090                                        
 l11098                                        
 l11102                                        
 l11106                                        
+l11110                                        
 l1450                                         
 l1456                                         
 l1462                                         
@@ -1072,13 +1072,13 @@ l5921
 l7271                                         
 l7352                                         
 l7453                                         
-l9626                                         
 l9628                                         
-l9632                                         
-l9640                                         
+l9630                                         
+l9634                                         
 l9642                                         
 l9644                                         
-l9648                                         
+l9646                                         
+l9650                                         
 modbus@rx_timeout           bssBANK0     00052
 modbus_main@CRC_Temp        cstackBANK0  00043
 modbus_main@REG_Temp        cstackBANK0  00045
